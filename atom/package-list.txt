@@ -1,0 +1,5 @@
+atom-beautify@0.29.12
+language-pug@0.0.18
+misty-syntax@0.0.0
+pigments@0.35.1
+todo-show@1.7.0
