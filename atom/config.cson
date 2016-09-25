@@ -1,0 +1,30 @@
+"*":
+  core:
+    openEmptyEditorOnStart: false
+    themes: [
+      "ui-theme-template"
+      "misty-syntax"
+    ]
+  editor:
+    fontFamily: "SF Mono"
+    fontSize: 16
+    showIndentGuide: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "976749f0-a009-cf5a-3767-53e1f41246e1"
+  pigments:
+    markerType: "dot"
+  "todo-show":
+    ignoreThesePaths: [
+      "**/node_modules/"
+      "**/vendor/"
+      "**/bower_components/"
+      "atom/packages/"
+    ]
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+".text.todo":
+  editor:
+    tabLength: 4
