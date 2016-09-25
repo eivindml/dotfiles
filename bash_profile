@@ -12,4 +12,4 @@ function parse_git_dirty {
     fi
 }
 
-export PS1="🍃  \[\e[37m\]\w\[\e[m\] $(parse_git_dirty)"
+export PS1="🍃  \[\e[37m\]\w\[\e[m\] \$(parse_git_dirty)"
