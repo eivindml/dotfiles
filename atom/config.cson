@@ -1,10 +1,6 @@
 "*":
   core:
     openEmptyEditorOnStart: false
-    themes: [
-      "ui-theme-template"
-      "misty-syntax"
-    ]
   editor:
     fontFamily: "SF Mono"
     fontSize: 16
