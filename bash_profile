@@ -1,8 +1,10 @@
 #!/bin/bash
 
 function parse_git_dirty {
-    if git status | grep -q "Changes not staged for commit:"; then
-      echo "💩  "
+  if git status | grep -q "Changes to be committed:"; then
+      echo "🚦  "
+  elif git status | grep -q "Changes not staged for commit:"; then
+        echo "💩  "
     elif git status | grep -q "ahead"; then
        echo "🐎  "
    else
