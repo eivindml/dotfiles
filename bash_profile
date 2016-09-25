@@ -3,16 +3,17 @@
 function parse_git_dirty {
     # TODO: Make it recognize .git folder in parent
     if [ -d .git ]; then # Check if git folder
+        branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
         if git status | grep -q "fatal: Not a git repository"; then
             echo ""
         elif git status | grep -q "Changes to be committed:"; then
-            echo "🚦  "
+            echo "[$branch 🚦 ]  "
         elif git status | grep -q "Changes not staged for commit:"; then
-              echo "💩  "
+              echo "[$branch 💩 ] "
           elif git status | grep -q "ahead"; then
-             echo "🐎  "
+             echo "[$branch 🐎 ] "
          else
-             echo "🚿  "
+             echo "[$branch 🚿 ] "
           fi
 else
   echo ""
