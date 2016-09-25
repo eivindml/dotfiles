@@ -1,49 +1,52 @@
-function we_are_in_git_work_tree {
-    git rev-parse --is-inside-work-tree &> /dev/null
-}
+#
+# Define some colors first: Capitals denote bold
+#
+red='\e[0;31m'
+RED='\e[1;31m'
+green='\e[0;32m'
+GREEN='\e[1;32m'
+yellow='\e[0;33m'
+YELLOW='\e[1;33m'
+blue='\e[0;34m'
+BLUE='\e[1;34m'
+magenta='\e[0;35m'
+MAGENTA='\e[1;35m'
+cyan='\e[0;36m'
+CYAN='\e[1;36m'
+NC='\e[0m'              # No Color
 
-function parse_git_branch {
-    if we_are_in_git_work_tree
-    then
-    local BR=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD 2> /dev/null)
-    if [ "$BR" == HEAD ]
-    then
-        local NM=$(git name-rev --name-only HEAD 2> /dev/null)
-        if [ "$NM" != undefined ]
-        then echo -n "@$NM"
-        else git rev-parse --short HEAD 2> /dev/null
-        fi
+# Taken from http://www.opinionatedprogrammer.com/2011/01/colorful-bash-prompt-reflecting-git-status/
+function _git_prompt() {
+  local git_status="`git status -unormal 2>&1`"
+  if ! [[ "$git_status" =~ Not\ a\ git\ repo ]]; then
+    if [[ "$git_status" =~ nothing\ to\ commit ]]; then
+      local ansi=$GREEN
+    elif [[ "$git_status" =~ nothing\ added\ to\ commit\ but\ untracked\ files\ present ]]; then
+      local ansi=$RED
     else
-        echo -n $BR
+      local ansi=$YELLOW
     fi
+    if [[ "$git_status" =~ On\ branch\ ([^[:space:]]+) ]]; then
+      branch=${BASH_REMATCH[1]}
+      #test "$branch" != master || branch=' '
+    else
+      # Detached HEAD.  (branch=HEAD is a faster alternative.)
+      branch="(`git describe --all --contains --abbrev=4 HEAD 2> /dev/null ||
+      echo HEAD`)"
     fi
+    echo -n '[\['"$ansi"'\]'"$branch"'\[\e[0m\]]'
+  fi
 }
 
-function parse_git_status {
-    if we_are_in_git_work_tree
-    then
-    local ST=$(git status --short 2> /dev/null)
-    if [ -n "$ST" ]
-    then echo -n " + "
-    else echo -n " - "
-    fi
-    fi
+function report_status() {
+  RET_CODE=$?
+  if [[ $RET_CODE -ne 0 ]] ; then
+    echo -ne "[\[$RED\]$RET_CODE\[$NC\]]"
+  fi
 }
 
-function pwd_depth_limit_2 {
-    if [ "$PWD" = "$HOME" ]
-    then echo -n "~"
-    else pwd | sed -e "s|.*/\(.*/.*\)|\1|"
-    fi
-}
+export _PS1="\[$NC\][\u@\h \W]"
+export PS2="\[$NC\]> "
+export PROMPT_COMMAND='_status=$(report_status);export PS1="$(_git_prompt)${_status}${_PS1}\$ ";unset _status;'
 
-COLBROWN="\[\033[1;33m\]"
-COLRED="\[\033[1;31m\]"
-COLCLEAR="\[\033[0m\]"
-
-# export all these for subshells
-export -f parse_git_branch parse_git_status we_are_in_git_work_tree pwd_depth_limit_2
-export PS1="$COLRED<$COLBROWN \$(pwd_depth_limit_2)$COLRED\$(parse_git_status)$COLBROWN\$(parse_git_branch) $COLRED>$COLCLEAR "
-export TERM="xterm-color"
-
-#export PS1="🍃  \[\e[37m\]\w\[\e[m\] "
+#export PS1="🍃  \[\e[37m\]\w\[\e[m\] $(__git_ps1)"
