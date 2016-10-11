@@ -10,9 +10,13 @@ The aim is to create a dotfile setup that configures my entire macOS system.
 - Installs .app applications through brew cask.
 - Update entire system through `update.sh`.
 
-### atom
+### Atom
 Package List
 You use the following:
 
 `apm list --installed --bare > package-list.txt`
 to create your package list and then apm install --packages-file package-list.txt to install them.
+
+## Next
+
+- TODO: Clean up project directory and file name and file structure.
