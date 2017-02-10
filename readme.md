@@ -1,6 +1,7 @@
 # dotfiles
 
-## Why?
+<center>![](header.png)</center>
+
 The aim is to create a dotfile setup that configures my entire macOS system.
 
 ```
