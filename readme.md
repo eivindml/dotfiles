@@ -3,6 +3,18 @@
 ## Why?
 The aim is to create a dotfile setup that configures my entire macOS system.
 
+```
+.
+├── README.md
+├── app
+├── bin
+│   └── func
+├── config
+├── home
+├── install.sh
+└── macos
+```
+
 ## How?
 - Changes macOS settings through defaults writes.
 - Symlinks .dotfiles to ~.

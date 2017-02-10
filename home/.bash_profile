@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# TODO: Add "untracked" status also (for files in directory not added to git)
+# TODO: Find better way to visualize git status (not clear enough with current emojis)
+# TODO: Better placement/styling of git status block in prompt.
+function parse_git_dirty {
+    # TODO: Make it recognize .git folder in parent
+    if [ -d .git ]; then # Check if git folder
+        branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+        if git status | grep -q "fatal: Not a git repository"; then
+            echo ""
+        elif git status | grep -q "Changes to be committed:"; then
+            echo "[$branch 🚦 ]  "
+        elif git status | grep -q "Changes not staged for commit:"; then
+              echo "[$branch 💩 ] "
+          elif git status | grep -q "ahead"; then
+             echo "[$branch 🐎 ] "
+         else
+             echo "[$branch 🚿 ] "
+          fi
+else
+  echo ""
+fi;
+
+}
+
+export PS1="🍃  \[\e[37m\]\w\[\e[m\] \$(parse_git_dirty)"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
