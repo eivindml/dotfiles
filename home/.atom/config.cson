@@ -43,7 +43,7 @@
       "one-dark-ui"
       "one-dark-vivid-syntax"
     ]
-    titleBar: "custom"
+    titleBar: "custom-inset"
   editor:
     fontSize: 17
     preferredLineLength: 120
@@ -103,6 +103,7 @@
     alwaysOpenExisting: true
     autoReveal: true
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   "tree-view-sort":
     caseSensitive: false

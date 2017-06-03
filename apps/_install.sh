@@ -1,17 +1,12 @@
 #!/bin/bash
 
-cd homebrew/
-bash _install.sh
-cd ../
+function sub_install {
+  cd $1
+  bash _install.sh
+  cd ../
+}
 
-cd mas/
-bash _install.sh
-cd ../
-
-cd npm/
-bash _install.sh
-cd ../
-
-cd gem/
-bash _install.sh
-cd ../
+sub_install homebrew/
+sub_install mas/
+sub_install npm/
+sub_install gem/

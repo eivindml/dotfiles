@@ -17,6 +17,3 @@ ln .gitconfig ~/.gitconfig
 
 rm -rf ~/.atom
 ln -s ~/dotfiles/home/.atom/ ~/.atom
-
-# Used to sync/install packages defined in .atom/packages.cson
-apm install package-sync
