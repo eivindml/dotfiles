@@ -1,4 +1,4 @@
-<center>![Header image](https://raw.githubusercontent.com/eivindml/dotfiles/master/header.png "header image")</center>
+![Header image](https://raw.githubusercontent.com/eivindml/dotfiles/master/header.png)
 
 A better dotfile configuration, aiming for good organization, structure and adaptability. Most other configuration are messy, require dependencies, hard to grasp and too opinionated.
 
