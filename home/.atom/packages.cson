@@ -1,0 +1,8 @@
+packages: [
+  "package-sync",
+  "one-dark-vivid-syntax",
+  "atom-beautify",
+  "file-icons",
+  "pigments",
+  "tree-view-sort"
+]

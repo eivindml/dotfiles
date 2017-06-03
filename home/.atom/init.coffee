@@ -9,3 +9,11 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+path = require 'path'
+atom.workspace.onDidOpen ({item}) ->
+  if item.getPath?() && path.basename(item.getPath()) is 'LICENSE'
+    item.setGrammar(atom.grammars.grammarForScopeName('source.gfm'))
+
+  if item.getPath?() && path.basename(item.getPath()) is 'Movefile'
+    item.setGrammar(atom.grammars.grammarForScopeName('source.yaml'))

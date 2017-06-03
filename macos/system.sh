@@ -1,7 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Ask for the administrator password upfront
-sudo -v
 
 # Disable the App Store origin security
 sudo spctl --master-disable
@@ -9,16 +7,8 @@ sudo spctl --master-disable
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
-# Set Desktop as the default location for new Finder windows
-defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Projects/"
-
 # Remove thick scrollbar
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
-
-# TODO: Set scaled resolution to more space
-
-# TODO: Set os theme to dark mode
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -40,17 +30,6 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Plain text default for text edit
 defaults write com.apple.TextEdit RichText -int 0
 
-
-# Dark mode
-osascript <<'END'
-do shell script ("sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true") with administrator privileges
-tell application "Finder" to activate
-delay 0.2
-tell application "System Events"
-key code "17" using {option down, control down, command down}     #Option+Control+Command+T
-end tell
-END
-
 # Enable the Develop menu and the Web Inspector in Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
@@ -59,13 +38,9 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
-# SAFARI
+# Set Dark Mode
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
-# Disable AutoFill
-defaults write com.apple.Safari AutoFillFromAddressBook -bool false
-defaults write com.apple.Safari AutoFillPasswords -bool false
-defaults write com.apple.Safari AutoFillCreditCardData -bool false
-defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
-
-# View full URL i status bar
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+# Set background image
+sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '/Library/Desktop Pictures/Yosemite 3.jpg'"
+killall Dock

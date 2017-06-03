@@ -1,6 +1,0 @@
-[submodule "config/latex/moderncv"]
-	path = config/latex/moderncv
-	url = https://github.com/xdanaux/moderncv
-[submodule "config/latex/apple-emoji"]
-	path = config/latex/apple-emoji
-	url = https://github.com/DPDmancul/Apple-Emoji

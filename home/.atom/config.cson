@@ -19,27 +19,42 @@
       remove_trailing_whitespace: true
     php:
       beautify_on_save: true
+      fixers: "indentation,linefeed"
     sass:
       beautify_on_save: true
   build:
     overrideThemeColors: false
   core:
+    closeDeletedFileTabs: true
     disabledPackages: [
       "terminal-plus"
       "jade-beautify"
       "swift-debugger"
       "language-gfm"
-      "markdown-preview"
+      "markdown-writer"
+      "linter-markdown"
+      "markdown-themeable-pdf"
+      "markdown-preview-plus"
+      "emmet"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
+    titleBar: "custom"
   editor:
-    fontFamily: "SF Mono"
+    fontSize: 17
+    preferredLineLength: 120
+    scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
     softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
   "exception-reporting":
     userId: "976749f0-a009-cf5a-3767-53e1f41246e1"
+  "file-icons": {}
   "git-diff":
     showIconsInEditorGutter: true
   "git-plus":
@@ -55,11 +70,22 @@
   "jade-beautify":
     FILL_TAB: false
   linter: {}
+  "markdown-preview":
+    useGitHubStyle: true
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+    useGitHubStyle: true
+  "markdown-themeable-pdf":
+    enableCustomFooter: false
+    enableCustomHeader: false
+    openPdfInAtomWorkspace: false
+    pageBorder: "3cm"
   "markdown-writer":
     relativeImagePath: true
   "pdf-view":
     paneToUseInSynctex: "right"
   pigments:
+    delayBeforeScan: 200
     markerType: "dot"
   tasks:
     baseMarker: "-"
@@ -74,14 +100,25 @@
     ]
     sortBy: "Path"
   "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  "tree-view-sort":
+    caseSensitive: false
+    type: 2
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   "wakatime-hidden":
-    lastInit: 1486729138
+    lastInit: 1492679061
   welcome:
     showOnStartup: false
+".pug.source":
+  editor:
+    autoIndentOnPaste: false
+    softWrapHangingIndent: 4
 ".text.todo":
   editor:
     tabLength: 4
+"file-types":
+  Movefile: "source.yaml"

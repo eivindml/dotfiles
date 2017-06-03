@@ -1,1 +1,10 @@
 .DS_Store
+
+# Atom sync
+*/.atom/blob-store/
+*/.atom/compile-cache/
+*/.atom/packages/
+*/.atom/storage/
+*/.atom/.apm/
+*/.atom/.node-gyp/
+*/.atom/recovery/

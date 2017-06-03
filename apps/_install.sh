@@ -1,17 +1,17 @@
 #!/bin/bash
 
-cd apps/
+cd homebrew/
 bash _install.sh
 cd ../
 
-cd home/
+cd mas/
 bash _install.sh
 cd ../
 
-cd macos/
+cd npm/
 bash _install.sh
 cd ../
 
-cd config/
+cd gem/
 bash _install.sh
 cd ../
