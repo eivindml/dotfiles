@@ -28,7 +28,8 @@ I have divided all dotfile related stuff into four sub-folders (for now).
 
 ```
 .
-├── app
+├── bin
+├── apps
 ├── home
 ├── macos
 ├── config
@@ -36,6 +37,7 @@ I have divided all dotfile related stuff into four sub-folders (for now).
 └── install.sh
 ```
 
+- **bin/** for executables and scripts. To be added to `$PATH`.
 - **app/** is responsible for installing all global apps/software/utilities. E.g. through brew, cask, mas, npm, gem.
 - **home/** is for all files which belongs to `$HOME` dir. Typically symlinked files/folders.
 - **macos/** is for os configuration. Ideally all settings changes to the os should be defined here, so that everything can be set back to normal after a reinstall with one command.
@@ -48,6 +50,10 @@ This way everything is super modular, and the setup won't get entagled with depe
 All apps are defined in the files `Brewfile`, `Caskfile`, `Masfile` (Apple Store apps), `Gemfile` and `Npmfile` (node package).
 
 `install.sh` will run each `_install.sh` defined in all subfolders, while `update.sh` will run updates for macos and all installed package managers.
+
+## How it looks
+
+![Current screenshot](screen.png)
 
 ## Contributions
 
