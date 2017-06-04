@@ -1,3 +1,5 @@
+alias ls='ls -G'
+
 # Auto start tmux session
 if [ "$TMUX" = "" ]; then tmux; fi
 

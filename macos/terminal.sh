@@ -10,3 +10,5 @@ tell application "Terminal"
 	set default settings to settings set themeName
 end tell
 END
+
+sudo scutil --set HostName rocketship
