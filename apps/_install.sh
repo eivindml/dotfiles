@@ -6,6 +6,7 @@ function sub_install {
   cd ../
 }
 
+# Homebrew should run first, as a lot depends on this
 sub_install homebrew/
 sub_install mas/
 sub_install npm/

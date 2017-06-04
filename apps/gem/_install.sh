@@ -9,6 +9,6 @@ if [[ $? != 0 ]] ; then
     return
 fi
 
-echo "Installing global npm files …"
+echo "Installing global gem files …"
 sudo -v
 cat Gemfile | xargs sudo gem install

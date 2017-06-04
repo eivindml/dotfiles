@@ -3,5 +3,9 @@
 # Ask for the administrator password upfront
 sudo -v
 
-bash system.sh
+# macOS settings
+bash os.sh
+# Safari settings
 bash safari.sh
+# Terminal settings
+bash terminal.sh

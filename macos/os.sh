@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Disable the App Store origin security
 sudo spctl --master-disable
 

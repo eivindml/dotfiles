@@ -4,5 +4,6 @@ packages: [
   "atom-beautify",
   "file-icons",
   "pigments",
-  "tree-view-sort"
+  "tree-view-sort",
+  "language-markdown"
 ]

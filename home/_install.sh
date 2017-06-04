@@ -3,6 +3,9 @@
 rm ~/.bash_profile
 ln .bash_profile ~/.bash_profile
 
+rm ~/.zshrc
+ln .zshrc ~/.zshrc
+
 rm ~/.inputrc
 ln .inputrc ~/.inputrc
 

@@ -1,5 +1,2 @@
-
 syntax on
-
-" Numbers
 set number

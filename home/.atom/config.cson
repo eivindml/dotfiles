@@ -45,7 +45,7 @@
     ]
     titleBar: "custom-inset"
   editor:
-    fontSize: 17
+    fontSize: 15
     preferredLineLength: 120
     scrollPastEnd: true
     showIndentGuide: true
