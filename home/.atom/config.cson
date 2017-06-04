@@ -45,6 +45,7 @@
     ]
     titleBar: "custom-inset"
   editor:
+    fontFamily: "Fira Mono"
     fontSize: 15
     preferredLineLength: 120
     scrollPastEnd: true
