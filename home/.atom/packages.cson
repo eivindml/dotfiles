@@ -6,5 +6,6 @@ packages: [
   "pigments",
   "tree-view-sort",
   "language-markdown",
-  "language-applescript"
+  "language-applescript",
+  "language-generic-config"
 ]

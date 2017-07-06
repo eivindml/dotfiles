@@ -41,5 +41,10 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
 # Set background image
-sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '/Library/Desktop Pictures/Yosemite 3.jpg'"
+sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = 'background.png'"
 killall Dock
+
+# Set Desktop as the default location for new Finder windows
+# For other paths, use `PfLo` and `file:///full/path/here/`
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Documents/"

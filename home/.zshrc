@@ -1,6 +1,6 @@
-alias ls='ls -GAF'
+alias ls='gls -XF --color'
 
-export PATH=~/dotfiles/bin:$PATH
+export PATH=~/Documents/projects/dotfiles/bin:$PATH
 
 # Auto start tmux session
 if [ "$TMUX" = "" ]; then tmux; fi
@@ -10,7 +10,8 @@ function get_pwd() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='
-%F{green}$(get_pwd)
-%F{white}→%f '
-RPROMPT='%F{red}$(git-status)'
+PROMPT='%F{cyan}$(get_pwd)
+%B%F{white}❯%f%b '
+RPROMPT='$(git-status)'
+
+source ~/Documents/projects/dotfiles/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

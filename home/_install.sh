@@ -16,4 +16,4 @@ rm ~/.gitconfig
 ln .gitconfig ~/.gitconfig
 
 rm -rf ~/.atom
-ln -s ~/dotfiles/home/.atom/ ~/.atom
+ln -s ~/Documents/projects/dotfiles/home/.atom/ ~/.atom
