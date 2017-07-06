@@ -15,5 +15,8 @@ ln .lftprc ~/.lftprc
 rm ~/.gitconfig
 ln .gitconfig ~/.gitconfig
 
+rm ~/.gitignore
+ln .gitignore ~/.gitignore
+
 rm -rf ~/.atom
 ln -s ~/Documents/projects/dotfiles/home/.atom/ ~/.atom

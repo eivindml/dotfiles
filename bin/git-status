@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function get_num_untracked {
-  expr `git status --porcelain 2>/dev/null| grep "^??" | wc -l`
+  expr `git status --porcelain 2>/dev/null| egrep "^(M| M)" | wc -l`
 }
 
 function get_dirty_state {
