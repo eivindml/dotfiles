@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'net/http'
+require 'json'
+
+url = 'https://github-stats.com/api/user/streak/current/eivindml'
+uri = URI(url)
+response = Net::HTTP.get(uri)
+parsed = JSON.parse(response)
+
+print parsed["currentStreak"].to_s
