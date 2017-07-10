@@ -14,6 +14,7 @@
     latex:
       always_look_for_split_brackets: true
       beautify_on_save: true
+      disabled: true
       indent_preamble: true
       indent_with_tabs: false
       remove_trailing_whitespace: true
@@ -83,11 +84,18 @@
     pageBorder: "3cm"
   "markdown-writer":
     relativeImagePath: true
+  "package-sync":
+    createOnChange: true
   "pdf-view":
     paneToUseInSynctex: "right"
   pigments:
     delayBeforeScan: 200
     markerType: "dot"
+  tablr:
+    csvEditor:
+      header: true
+    tableEditor:
+      scrollPastEnd: true
   tasks:
     baseMarker: "-"
     cancelledMarker: "-"

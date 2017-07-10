@@ -2,6 +2,7 @@
 
 require 'net/http'
 require 'json'
+require 'tmpdir' # Not needed if you are using rails.
 
 url = 'https://github-stats.com/api/user/streak/current/eivindml'
 uri = URI(url)

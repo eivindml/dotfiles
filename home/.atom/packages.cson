@@ -7,5 +7,8 @@ packages: [
   "tree-view-sort",
   "language-markdown",
   "language-applescript",
-  "language-generic-config"
+  "language-generic-config",
+  "tablr",
+  "editorconfig",
+  "language-latex"
 ]
