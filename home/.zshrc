@@ -1,3 +1,7 @@
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+
+alias \#=':' # Do nothing command. Usefule for commenting.
 alias ls='gls -XF --color'
 
 export PATH=~/Documents/projects/dotfiles/bin:$PATH
@@ -15,4 +19,4 @@ PROMPT='%F{cyan}$(get_pwd)
 %B%F{white}❯%f%b '
 RPROMPT='$(git-status)'
 
-source ~/Documents/projects/dotfiles/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
