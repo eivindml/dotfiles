@@ -21,8 +21,7 @@
     php:
       beautify_on_save: true
       fixers: "indentation,linefeed"
-    sass:
-      beautify_on_save: true
+    sass: {}
   build:
     overrideThemeColors: false
   core:
@@ -90,7 +89,6 @@
     paneToUseInSynctex: "right"
   pigments:
     delayBeforeScan: 200
-    markerType: "dot"
   tablr:
     csvEditor:
       header: true
