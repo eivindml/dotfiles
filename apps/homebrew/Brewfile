@@ -1,9 +1,10 @@
-mas
+autojump
+coreutils
 git
+mariadb
+mas
 node
 ruby
 tmux
-coreutils
-autojump
 vim
-mariadb
+zsh-syntax-highlighting
