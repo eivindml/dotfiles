@@ -1,6 +1,7 @@
 autojump
 coreutils
 git
+homebrew/php/php-cs-fixer
 mariadb
 mas
 node

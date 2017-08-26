@@ -6,6 +6,9 @@
       force_indentation: true
     general:
       _analyticsUserId: "cd38cf6e-6fc4-4914-9d3b-1e8fcdd3949a"
+    html:
+      beautify_on_save: true
+      indent_inner_html: true
     jade:
       beautify_on_save: true
       indent_size: 2
@@ -19,7 +22,6 @@
       indent_with_tabs: false
       remove_trailing_whitespace: true
     php:
-      beautify_on_save: true
       fixers: "indentation,linefeed"
     sass: {}
   build:
@@ -50,9 +52,10 @@
     preferredLineLength: 120
     scrollPastEnd: true
     showIndentGuide: true
+    softTabs: false
     softWrap: true
     softWrapAtPreferredLineLength: true
-    softWrapHangingIndent: 4
+    tabType: "soft"
   "exception-reporting":
     userId: "976749f0-a009-cf5a-3767-53e1f41246e1"
   "file-icons": {}
@@ -121,6 +124,8 @@
     lastInit: 1492679061
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
 ".pug.source":
   editor:
     autoIndentOnPaste: false
