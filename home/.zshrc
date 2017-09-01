@@ -19,4 +19,13 @@ PROMPT='%F{cyan}$(get_pwd)
 %B%F{white}❯%f%b '
 RPROMPT='$(git-status)'
 
+# Better history
+SAVEHIST=1000000
+HISTSIZE=1000000
+HISTFILE=~/.zhistory
+setopt APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
