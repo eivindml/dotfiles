@@ -2,11 +2,12 @@ autojump
 coreutils
 git
 homebrew/php/php-cs-fixer
+imagemagick
 mariadb
 mas
 node
+reattach-to-user-namespace
 ruby
 tmux
 vim
 zsh-syntax-highlighting
-imagemagick
