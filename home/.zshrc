@@ -1,25 +1,27 @@
+# PLUGINS
+
+# Autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+# Syntax highlting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# PATHS
+export PATH=~/Documents/projects/dotfiles/bin:$PATH
 
+# ALIASES
 alias \#=':' # Do nothing command. Usefule for commenting.
 alias ls='gls -XF --color'
 
-export PATH=~/Documents/projects/dotfiles/bin:$PATH
+# CONFIGURATIONS
 
-# Auto start tmux session
-if [ "$TMUX" = "" ]; then tmux; fi
-
-function get_pwd() {
-  echo "${PWD/$HOME/~}"
-}
-
+# Prompt
 ZLE_RPROMPT_INDENT=0
 setopt PROMPT_SUBST
-PROMPT='%F{cyan}$(get_pwd)
+PROMPT='%F{cyan}${PWD/$HOME/~}
 %B%F{white}❯%f%b '
 RPROMPT='$(git-status)'
 
-# Better history
+# History
 SAVEHIST=1000000
 HISTSIZE=1000000
 HISTFILE=~/.zhistory
@@ -28,4 +30,5 @@ setopt EXTENDED_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Auto start tmux session
+if [ "$TMUX" = "" ]; then tmux; fi
