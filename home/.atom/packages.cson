@@ -5,10 +5,12 @@ packages: [
   "file-icons",
   "pigments",
   "tree-view-sort",
+  "language-pug",
+  "language-latex",
   "language-markdown",
   "language-applescript",
   "language-generic-config",
   "tablr",
   "editorconfig",
-  "language-latex"
+  "wakatime"
 ]

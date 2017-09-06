@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for d in */ ; do
+	cd $d
+	word="$(git-status)"
+       	if echo "${word}" | grep '[0-9]' >/dev/null; then
+		echo "$d"
+		var=$(git-status)
+		#echo -e "$var"
+	else
+		word=""
+	fi	   
+	cd ..
+done

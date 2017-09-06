@@ -6,6 +6,7 @@ imagemagick
 mariadb
 mas
 node
+python
 reattach-to-user-namespace
 ruby
 tmux

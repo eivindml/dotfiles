@@ -12,3 +12,5 @@ sub_install mas/
 sub_install npm/
 sub_install gem/
 sub_install latex/
+
+# Custom script installs
