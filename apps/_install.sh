@@ -14,3 +14,9 @@ sub_install gem/
 sub_install latex/
 
 # Custom script installs
+# Sketchtool
+sh /Applications/Sketch.app/Contents/Resources/sketchtool/install.sh
+# Wakatime
+curl -fsSL https://raw.githubusercontent.com/wakatime/xcode-wakatime/master/install.sh | sh
+
+

@@ -7,6 +7,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # PATHS
 export PATH=~/Documents/projects/dotfiles/bin:$PATH
+export PATH="$HOME/.fastlane/bin:$PATH"
 
 # ALIASES
 alias \#=':' # Do nothing command. Usefule for commenting.
