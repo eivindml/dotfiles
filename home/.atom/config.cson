@@ -17,11 +17,13 @@
     latex:
       always_look_for_split_brackets: true
       beautify_on_save: true
-      disabled: true
       indent_preamble: true
       indent_with_tabs: false
       remove_trailing_whitespace: true
+    markdown:
+      beautify_on_save: true
     php:
+      beautify_on_save: true
       fixers: "indentation,linefeed"
     sass: {}
   build:
@@ -55,6 +57,7 @@
     softTabs: false
     softWrap: true
     softWrapAtPreferredLineLength: true
+    tabLength: 4
     tabType: "soft"
   "exception-reporting":
     userId: "976749f0-a009-cf5a-3767-53e1f41246e1"
