@@ -44,8 +44,8 @@
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "one-dark-vivid-syntax"
+      "one-light-ui"
+      "themer-dark-syntax"
     ]
     titleBar: "custom-inset"
   editor:
