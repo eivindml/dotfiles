@@ -6,8 +6,8 @@
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # PATHS
-export PATH=~/Documents/projects/dotfiles/bin:$PATH
-export PATH="$HOME/.fastlane/bin:$PATH"
+
+export PATH=$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
 
 # ALIASES
 alias \#=':' # Do nothing command. Usefule for commenting.
@@ -33,3 +33,4 @@ setopt SHARE_HISTORY
 
 # Auto start tmux session
 if [ "$TMUX" = "" ]; then tmux; fi
+export PATH="/usr/local/sbin:$PATH"
