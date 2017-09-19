@@ -1,9 +1,14 @@
 {
-	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - One Dark/One Dark.tmTheme",
+	"file_exclude_patterns":
+	[
+	],
+	"folder_exclude_patterns":
+	[
+	],
 	"font_face": "SF Mono Regular",
-	"font_size": 17,
-	"hot_exit": false,
-	"remember_open_files": false,
-	"theme": "One Dark.sublime-theme"
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Vintage"
+	]
 }
