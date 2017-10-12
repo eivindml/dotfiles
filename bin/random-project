@@ -1,0 +1,4 @@
+#!/bin/bash
+
+dir=`ls -d ~/Documents/projects/* | sort --random-sort | head -1`;
+echo "$dir";

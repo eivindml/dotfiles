@@ -1,0 +1,16 @@
+packages: [
+  "package-sync",
+  "one-dark-vivid-syntax",
+  "atom-beautify",
+  "file-icons",
+  "pigments",
+  "tree-view-sort",
+  "language-pug",
+  "language-latex",
+  "language-markdown",
+  "language-applescript",
+  "language-generic-config",
+  "tablr",
+  "editorconfig",
+  "wakatime"
+]

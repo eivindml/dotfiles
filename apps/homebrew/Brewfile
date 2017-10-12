@@ -9,8 +9,10 @@ node
 python
 reattach-to-user-namespace
 ruby
+php71
 tmux
 vim
 zsh-syntax-highlighting
 swiftformat
 terminal-notifier
+composer

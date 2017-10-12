@@ -1,5 +1,5 @@
 #!/usr/bin/env osascript
-# Returns the current playing song in Spotify for OSX
+-- Returns the current playing song in Spotify for OSX
 
 tell application "iTunes"
   if it is running then
@@ -8,10 +8,10 @@ tell application "iTunes"
       set artist_name to artist of current track
 
       if artist_name > 0
-        # If the track has an artist set and is therefore most likely a song rather than an advert
+        -- If the track has an artist set and is therefore most likely a song rather than an advert
         "#[fg=white]♫  #[fg=cyan]" & artist_name & " - " & track_name
       else
-        # If the track doesn't have an artist set and is therefore most likely an advert rather than a song
+        -- If the track doesn't have an artist set and is therefore most likely an advert rather than a song
         "~ " & track_name
       end if
     end if
