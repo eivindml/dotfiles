@@ -22,6 +22,7 @@
       remove_trailing_whitespace: true
     markdown:
       beautify_on_save: true
+      disabled: true
     php:
       beautify_on_save: true
       fixers: "indentation,linefeed"
@@ -40,6 +41,7 @@
       "markdown-themeable-pdf"
       "markdown-preview-plus"
       "emmet"
+      "atom-beautify"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"

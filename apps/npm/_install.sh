@@ -11,3 +11,6 @@ fi
 
 echo "Installing global npm files …"
 cat Npmfile | xargs npm install -g
+
+echo "Installing global Yeoman generators …"
+cat Yofile | xargs npm install -g
