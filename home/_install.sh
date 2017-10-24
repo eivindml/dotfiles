@@ -9,9 +9,6 @@ ln .tmux.conf ~/.tmux.conf
 rm ~/.vimrc
 ln .vimrc ~/.vimrc
 
-rm ~/.vim
-ln -s $(pwd)/.vim/ ~/
-
 rm ~/.lftprc
 ln .lftprc ~/.lftprc
 
@@ -21,8 +18,14 @@ ln .gitconfig ~/.gitconfig
 rm ~/.gitignore
 ln .gitignore ~/.gitignore
 
+rm ~/.hushlogin
+ln .hushlogin ~/.hushlogin
+
+rm ~/.vim
+ln -s $(pwd)/.vim/ ~/
+
 rm -rf ~/.atom
 ln -s $(pwd)/.atom/ ~/
 
-rm ~/.hushlogin
-ln .hushlogin ~/.hushlogin
+rm -rf ~/.flexget
+ln -s $(pwd)/.flexget/ ~/
