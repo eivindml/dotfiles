@@ -1,4 +1,4 @@
-![Header image](https://raw.githubusercontent.com/eivindml/dotfiles/master/header.png)
+![Header image](.project/header.png)
 
 A better dotfile configuration, aiming for good organization, structure and adaptability. Most other configuration are messy, require dependencies, hard to grasp and too opinionated.
 
@@ -53,7 +53,7 @@ All apps are defined in the files `Brewfile`, `Caskfile`, `Masfile` (Apple Store
 
 ## How it looks
 
-![Current screenshot](screen.png)
+![Current screenshot](.project/screen.png)
 
 ## Contributions
 
