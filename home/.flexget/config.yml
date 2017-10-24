@@ -79,26 +79,25 @@ templates:
 
 tasks:
 
-  rarbg:
+  showrss.info:
     priority: 1
+    rss: http://showrss.info/user/134388.rss?magnets=true&namespaces=false&name=null&quality=anyhd&re=null
+    template: tv
+
+  rarbg:
+    priority: 2
     rss: https://rarbg.to/rss.php
     template: tv
 
   zooqle:
-    priority: 2
+    priority: 3
     rss: https://zooqle.com/search?q=%2A&fmt=rss
     template: tv
 
   norbits.net:
-    priority: 3
+    priority: 4
     rss: http://norbits.net/rss.php?feed=dl&passkey=74bc1121a91304aafb129c9dde9d8e95&format=bb
     template: tv
     private_torrents: yes
 
-  showrss.info:
-    priority: 4
-    rss:
-        url: http://showrss.info/user/134388.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
-        username: eivindml
-        password: ZsWEbABqfAfUp6VkwsiT
-    template: tv
+
