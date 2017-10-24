@@ -1,8 +1,6 @@
 templates:
   tv:
 
-#    private_torrents: no
-
     series:
       settings:
         tv:
@@ -76,10 +74,6 @@ templates:
       port: 9091
       username: admin
       password: admin
-
-    pushover:
-      user_key: u5YQXxZnUNixbXes3vnRCTQDeJpQ77
-      api_key: a44R1qvCyKqR8UwPvKh5w3WqZZmj1H
 
 tasks:
 
