@@ -23,3 +23,6 @@ ln .gitignore ~/.gitignore
 
 rm -rf ~/.atom
 ln -s .atom/ ~/.atom
+
+rm ~/.hushlogin
+ln .hushlogin ~/.hushlogin

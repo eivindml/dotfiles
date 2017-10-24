@@ -13,6 +13,7 @@ php71
 tmux
 vim
 zsh-syntax-highlighting
+zsh-autosuggestions
 swiftformat
 terminal-notifier
 composer
