@@ -12,3 +12,4 @@
 	- [ ] bin
 	- [ ] apps
 - [ ] Update readme with new template
+- [ ] Use secrets file for flexget rss feed config

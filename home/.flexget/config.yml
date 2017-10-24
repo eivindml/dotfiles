@@ -84,34 +84,21 @@ tasks:
     rss: https://rarbg.to/rss.php
     template: tv
 
-  extratorrents:
-    priority: 5
-    rss: https://extratorrents.unblockall.xyz/rss.xml?type=popular&cid=8
-    template: tv
-
-  limetorrents:
-    priority: 4
-    rss: https://www.limetorrents.cc/rss/20/
-    template: tv
-
   zooqle:
-    priority: 6
+    priority: 2
     rss: https://zooqle.com/search?q=%2A&fmt=rss
     template: tv
 
   norbits.net:
-    priority: 7
+    priority: 3
     rss: http://norbits.net/rss.php?feed=dl&passkey=74bc1121a91304aafb129c9dde9d8e95&format=bb
     template: tv
     private_torrents: yes
 
-  ezrss.it:
-    priority: 8
-    rss: https://eztv.ag/ezrss.xml
-    template: tv
-    verify_ssl_certificates: no
-
   showrss.info:
-    priority: 9
-    rss: http://showrss.info/user/134388.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
+    priority: 4
+    rss:
+        url: http://showrss.info/user/134388.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
+        username: eivindml
+        password: ZsWEbABqfAfUp6VkwsiT
     template: tv
