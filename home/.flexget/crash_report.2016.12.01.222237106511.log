@@ -1,0 +1,58 @@
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Moonshiners 6x00 720p` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Moonshiners 6x00` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Saturday Night Live 42x00` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Saturday Night Live 42x00 720p` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Moonshiners 6x00 720p` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Moonshiners 6x00` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Saturday Night Live 42x00` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  parser_internal showrss.karmorra.info-tv `Saturday Night Live 42x00 720p` appears to be an episode pack
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `The Simpsons 28x06`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `The Simpsons 28x06 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `The Simpsons 28x08 Dad Behavior`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `The Simpsons 28x08 Dad Behavior 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `The Simpsons 28x07 Havana Wild Weekend`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `The Simpsons 28x07 Havana Wild Weekend 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `South Park 20x09 Not Funny`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `South Park 20x09 Not Funny 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `South Park 20x07 Oh, Jeez`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `South Park 20x07 Oh, Jeez 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `South Park 20x08 Members Only`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `South Park 20x08 Members Only 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Saturday Night Live 42x07 Kristen Wiig/The xx`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `Saturday Night Live 42x07 Kristen Wiig/The xx 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Saturday Night Live 42x05 Benedict Cumberbatch/Solange REPACK`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Saturday Night Live 42x05 Benedict Cumberbatch/Solange`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Saturday Night Live 42x06 Dave Chappelle/A Tribe Called Quest`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `Saturday Night Live 42x06 Dave Chappelle/A Tribe Called Quest 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Modern Family 8x08 The Alliance`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv REJECTED: `Modern Family 8x08 The Alliance 720p` by series plugin because too much in the future from latest downloaded episode S08E02. See `--disable-tracking` if this should be downloaded.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Modern Family 8x07 Thanksgiving Jamboree REPACK`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Modern Family 8x07 Thanksgiving Jamboree`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Modern Family 8x06 Grab It REPACK`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Modern Family 8x06 Grab It`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Adventure Time 7x39 Reboot (2)`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `Adventure Time 7x39 Reboot (2) 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Adventure Time 7x38-39 Preboot (1)`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  series        showrss.karmorra.info-tv Ignored `Adventure Time 7x38 Preboot (1)`. Does not meet quality requirement `720p+`.
+2016-12-01 22:22 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `Adventure Time 7x38-39 Preboot (1) 720p` by series plugin because matches quality
+2016-12-01 22:22 VERBOSE  details       showrss.karmorra.info-tv Summary - Accepted: 10 (Rejected: 1 Undecided: 1057 Failed: 0)
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "South Park 20x09 Not Funny 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "Adventure Time 7x39 Reboot (2) 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x08 Dad Behavior 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "Saturday Night Live 42x07 Kristen Wiig/The xx 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "Adventure Time 7x38-39 Preboot (1) 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "South Park 20x08 Members Only 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x07 Havana Wild Weekend 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "Saturday Night Live 42x06 Dave Chappelle/A Tribe Called Quest 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "South Park 20x07 Oh, Jeez 720p" torrent added to transmission
+2016-12-01 22:22 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x06 720p" torrent added to transmission
+2016-12-01 22:22 VERBOSE  make_html     showrss.karmorra.info-tv Writing output html to /Users/eivindml/public_html/series.html
+2016-12-01 22:22 CRITICAL task          showrss.karmorra.info-tv BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/task.py", line 438, in __run_plugin
+    return method(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/event.py", line 22, in __call__
+    return self.func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/plugins/output/html.py", line 41, in on_task_output
+    with open(output, 'w') as f:
+IOError: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'

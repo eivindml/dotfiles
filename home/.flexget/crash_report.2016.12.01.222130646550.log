@@ -1,0 +1,58 @@
+2016-12-01 22:20 VERBOSE  series        showrss.karmorra.info-tv Ignored `Modern Family 8x06 Grab It REPACK`. Does not meet quality requirement `720p+`.
+2016-12-01 22:20 VERBOSE  series        showrss.karmorra.info-tv Ignored `Modern Family 8x06 Grab It`. Does not meet quality requirement `720p+`.
+2016-12-01 22:20 VERBOSE  series        showrss.karmorra.info-tv Ignored `Adventure Time 7x39 Reboot (2)`. Does not meet quality requirement `720p+`.
+2016-12-01 22:20 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `Adventure Time 7x39 Reboot (2) 720p` by series plugin because matches quality
+2016-12-01 22:20 VERBOSE  series        showrss.karmorra.info-tv Ignored `Adventure Time 7x38-39 Preboot (1)`. Does not meet quality requirement `720p+`.
+2016-12-01 22:20 VERBOSE  series        showrss.karmorra.info-tv Ignored `Adventure Time 7x38 Preboot (1)`. Does not meet quality requirement `720p+`.
+2016-12-01 22:20 VERBOSE  task          showrss.karmorra.info-tv ACCEPTED: `Adventure Time 7x38-39 Preboot (1) 720p` by series plugin because matches quality
+2016-12-01 22:20 VERBOSE  details       showrss.karmorra.info-tv Summary - Accepted: 10 (Rejected: 1 Undecided: 1057 Failed: 0)
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "South Park 20x09 Not Funny 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "Adventure Time 7x39 Reboot (2) 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x08 Dad Behavior 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "Saturday Night Live 42x07 Kristen Wiig/The xx 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "Adventure Time 7x38-39 Preboot (1) 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "South Park 20x08 Members Only 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x07 Havana Wild Weekend 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "Saturday Night Live 42x06 Dave Chappelle/A Tribe Called Quest 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "South Park 20x07 Oh, Jeez 720p" torrent added to transmission
+2016-12-01 22:20 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x06 720p" torrent added to transmission
+2016-12-01 22:20 VERBOSE  make_html     showrss.karmorra.info-tv Writing output html to /Users/eivindml/public_html/series.html
+2016-12-01 22:20 CRITICAL task          showrss.karmorra.info-tv BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+2016-12-01 22:20 CRITICAL manager       showrss.karmorra.info-tv An unexpected crash has occurred. Writing crash report to /Users/eivindml/.flexget/crash_report.2016.12.01.222055977779.log. Please verify you are running the latest version of flexget by using "flexget -V" from CLI or by using version_checker plugin at http://flexget.com/wiki/Plugins/version_checker. You are currently using version 1.2.495
+2016-12-01 22:20 WARNING  task          showrss.karmorra.info-tv Aborting task (plugin: make_html)
+2016-12-01 22:20 VERBOSE  details       feed10          Produced 30 entries.
+2016-12-01 22:20 VERBOSE  details       feed10          Summary - Accepted: 0 (Rejected: 0 Undecided: 30 Failed: 0)
+2016-12-01 22:20 VERBOSE  make_html     feed10          Writing output html to /Users/eivindml/public_html/series.html
+2016-12-01 22:20 CRITICAL task          feed10          BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+2016-12-01 22:20 CRITICAL manager       feed10          An unexpected crash has occurred. Writing crash report to /Users/eivindml/.flexget/crash_report.2016.12.01.222059442929.log. Please verify you are running the latest version of flexget by using "flexget -V" from CLI or by using version_checker plugin at http://flexget.com/wiki/Plugins/version_checker. You are currently using version 1.2.495
+2016-12-01 22:20 WARNING  task          feed10          Aborting task (plugin: make_html)
+2016-12-01 22:20 CRITICAL plugin        feed11          Unable to download the RSS for task feed11 (https://kickass.cd/bookmarks/rss/tvshows/<kat_rssid>/): [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:590)
+2016-12-01 22:20 WARNING  task          feed11          Aborting task (plugin: rss)
+2016-12-01 22:20 VERBOSE  input_cache   ezrss.it        Restored 50 entries from cache
+2016-12-01 22:21 VERBOSE  backlog       ezrss.it        Added 2725 entries from backlog
+2016-12-01 22:21 VERBOSE  details       ezrss.it        Produced 2775 entries.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `The Simpsons S28E07 HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `The Simpsons S28E08 HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `The Simpsons S28E06 HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `South Park S20E09 HDTV x264-FLEET`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `South Park S20E08 Members Only UNCENSORED HDTV x264-DEADPOOL`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `South Park S20E07 HDTV x264-FLEET`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S01E02 HDTV x264-BEGUN`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S02E01 Islands HDTV x264-PLUTONiUM`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S01E04 HDTV x264-BEGUN`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S01E03 HDTV x264-BEGUN`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Modern Family S08E08 HDTV x264-FLEET`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Modern Family S08E06 PROPER HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Cyberwar S01E12 HDTV x264-W4F`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  series        ezrss.it        Ignored `Cyberwar S01E10 HDTV x264-W4F`. Does not meet quality requirement `720p+`.
+2016-12-01 22:21 VERBOSE  details       ezrss.it        Summary - Accepted: 0 (Rejected: 0 Undecided: 2775 Failed: 0)
+2016-12-01 22:21 VERBOSE  make_html     ezrss.it        Writing output html to /Users/eivindml/public_html/series.html
+2016-12-01 22:21 CRITICAL task          ezrss.it        BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/task.py", line 438, in __run_plugin
+    return method(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/event.py", line 22, in __call__
+    return self.func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/plugins/output/html.py", line 41, in on_task_output
+    with open(output, 'w') as f:
+IOError: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'

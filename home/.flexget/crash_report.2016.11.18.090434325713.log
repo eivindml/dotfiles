@@ -1,0 +1,32 @@
+2016-11-18 09:03 DEBUG    manager                       Figuring out config load paths
+2016-11-18 09:03 DEBUG    manager                       Found config: /Users/eivindml/.flexget/config.yml
+2016-11-18 09:03 DEBUG    manager                       Config file /Users/eivindml/.flexget/config.yml selected
+2016-11-18 09:03 CRITICAL task          ezrss.it        BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+2016-11-18 09:03 CRITICAL manager       ezrss.it        An unexpected crash has occurred. Writing crash report to /Users/eivindml/.flexget/crash_report.2016.11.18.090341752842.log. Please verify you are running the latest version of flexget by using "flexget -V" from CLI or by using version_checker plugin at http://flexget.com/wiki/Plugins/version_checker. You are currently using version 1.2.495
+2016-11-18 09:03 WARNING  task          ezrss.it        Aborting task (plugin: make_html)
+2016-11-18 09:03 INFO     download      norbits.net     Downloading: Modern.Family.S08E03.NORDiC.720p.WEB-DL.H.264-RAPiDCOWS
+2016-11-18 09:03 INFO     transmission  norbits.net     "Modern.Family.S08E03.NORDiC.720p.WEB-DL.H.264-RAPiDCOWS" torrent added to transmission
+2016-11-18 09:03 CRITICAL task          norbits.net     BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+2016-11-18 09:03 CRITICAL manager       norbits.net     An unexpected crash has occurred. Writing crash report to /Users/eivindml/.flexget/crash_report.2016.11.18.090347039742.log. Please verify you are running the latest version of flexget by using "flexget -V" from CLI or by using version_checker plugin at http://flexget.com/wiki/Plugins/version_checker. You are currently using version 1.2.495
+2016-11-18 09:03 WARNING  task          norbits.net     Aborting task (plugin: make_html)
+2016-11-18 09:04 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x1072d1c90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',)': /tv/?rss=1
+2016-11-18 09:04 CRITICAL plugin        kat.ph-tv       Unable to download the RSS for task kat.ph-tv (http://kat.ph/tv/?rss=1): HTTPConnectionPool(host='kat.ph', port=80): Max retries exceeded with url: /tv/?rss=1 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x1072d1050>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2016-11-18 09:04 WARNING  task          kat.ph-tv       Aborting task (plugin: rss)
+2016-11-18 09:04 CRITICAL rss           torrentz.eu-tv  Received content is HTML page, not an RSS feed
+2016-11-18 09:04 CRITICAL rss           torrentz.eu-tv  I have saved the invalid content to /Users/eivindml/.flexget/received/torrentz.eu-tv-torrentz.eu.html for you to view
+2016-11-18 09:04 CRITICAL plugin        torrentz.eu-tv  Received invalid RSS content from task torrentz.eu-tv (http://torrentz.eu/feed)
+2016-11-18 09:04 WARNING  task          torrentz.eu-tv  Aborting task (plugin: rss)
+2016-11-18 09:04 INFO     transmission  showrss.karmorra.info-tv "South Park 20x08 Members Only 720p" torrent added to transmission
+2016-11-18 09:04 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x07 Havana Wild Weekend 720p" torrent added to transmission
+2016-11-18 09:04 INFO     transmission  showrss.karmorra.info-tv "Saturday Night Live 42x06 Dave Chappelle/A Tribe Called Quest 720p" torrent added to transmission
+2016-11-18 09:04 INFO     transmission  showrss.karmorra.info-tv "South Park 20x07 Oh, Jeez 720p" torrent added to transmission
+2016-11-18 09:04 INFO     transmission  showrss.karmorra.info-tv "The Simpsons 28x06 720p" torrent added to transmission
+2016-11-18 09:04 CRITICAL task          showrss.karmorra.info-tv BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/task.py", line 438, in __run_plugin
+    return method(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/event.py", line 22, in __call__
+    return self.func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/plugins/output/html.py", line 41, in on_task_output
+    with open(output, 'w') as f:
+IOError: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'

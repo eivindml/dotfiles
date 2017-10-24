@@ -1,0 +1,31 @@
+2016-12-01 22:19 DEBUG    manager                       Figuring out config load paths
+2016-12-01 22:19 DEBUG    manager                       Found config: /Users/eivindml/.flexget/config.yml
+2016-12-01 22:19 DEBUG    manager                       Config file /Users/eivindml/.flexget/config.yml selected
+2016-12-01 22:19 VERBOSE  task_queue                    There are 8 tasks to execute. Shutdown will commence when they have completed.
+2016-12-01 22:19 VERBOSE  backlog       ezrss.it        Added 2725 entries from backlog
+2016-12-01 22:19 VERBOSE  details       ezrss.it        Produced 2775 entries.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `The Simpsons S28E06 HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `The Simpsons S28E08 HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `The Simpsons S28E07 HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `South Park S20E09 HDTV x264-FLEET`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `South Park S20E08 Members Only UNCENSORED HDTV x264-DEADPOOL`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `South Park S20E07 HDTV x264-FLEET`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S02E01 Islands HDTV x264-PLUTONiUM`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S01E04 HDTV x264-BEGUN`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S01E02 HDTV x264-BEGUN`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Planet Earth II S01E03 HDTV x264-BEGUN`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Modern Family S08E08 HDTV x264-FLEET`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Modern Family S08E06 PROPER HDTV x264-KILLERS`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Cyberwar S01E10 HDTV x264-W4F`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  series        ezrss.it        Ignored `Cyberwar S01E12 HDTV x264-W4F`. Does not meet quality requirement `720p+`.
+2016-12-01 22:19 VERBOSE  details       ezrss.it        Summary - Accepted: 0 (Rejected: 0 Undecided: 2775 Failed: 0)
+2016-12-01 22:19 VERBOSE  make_html     ezrss.it        Writing output html to /Users/eivindml/public_html/series.html
+2016-12-01 22:19 CRITICAL task          ezrss.it        BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/task.py", line 438, in __run_plugin
+    return method(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/event.py", line 22, in __call__
+    return self.func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/plugins/output/html.py", line 41, in on_task_output
+    with open(output, 'w') as f:
+IOError: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'

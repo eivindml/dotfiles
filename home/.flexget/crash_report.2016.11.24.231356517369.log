@@ -1,0 +1,19 @@
+2016-11-24 23:13 DEBUG    manager                       Figuring out config load paths
+2016-11-24 23:13 DEBUG    manager                       Found config: /Users/eivindml/.flexget/config.yml
+2016-11-24 23:13 DEBUG    manager                       Config file /Users/eivindml/.flexget/config.yml selected
+2016-11-24 23:13 CRITICAL task          ezrss.it        BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+2016-11-24 23:13 CRITICAL manager       ezrss.it        An unexpected crash has occurred. Writing crash report to /Users/eivindml/.flexget/crash_report.2016.11.24.231347175106.log. Please verify you are running the latest version of flexget by using "flexget -V" from CLI or by using version_checker plugin at http://flexget.com/wiki/Plugins/version_checker. You are currently using version 1.2.495
+2016-11-24 23:13 WARNING  task          ezrss.it        Aborting task (plugin: make_html)
+2016-11-24 23:13 INFO     download      norbits.net     Downloading: Modern.Family.S08E04.NORDiC.720p.WEB-DL.H.264-RAPiDCOWS
+2016-11-24 23:13 INFO     download      norbits.net     Downloading: Modern.Family.S08E03.NORDiC.720p.WEB-DL.H.264-RAPiDCOWS
+2016-11-24 23:13 INFO     transmission  norbits.net     "Modern.Family.S08E04.NORDiC.720p.WEB-DL.H.264-RAPiDCOWS" torrent added to transmission
+2016-11-24 23:13 INFO     transmission  norbits.net     "Modern.Family.S08E03.NORDiC.720p.WEB-DL.H.264-RAPiDCOWS" torrent added to transmission
+2016-11-24 23:13 CRITICAL task          norbits.net     BUG: Unhandled error in plugin make_html: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/task.py", line 438, in __run_plugin
+    return method(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/event.py", line 22, in __call__
+    return self.func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/FlexGet-1.2.495-py2.7.egg/flexget/plugins/output/html.py", line 41, in on_task_output
+    with open(output, 'w') as f:
+IOError: [Errno 2] No such file or directory: u'/Users/eivindml/public_html/series.html'

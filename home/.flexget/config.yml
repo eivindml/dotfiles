@@ -1,0 +1,121 @@
+templates:
+  tv:
+
+#    private_torrents: no
+
+    series:
+      settings:
+        tv:
+          propers: 7 days
+          set:
+            path: /Volumes/TV/{{series_name}}
+      tv:
+        - Flaked
+        - Bravest Warriors
+        - The Last Man on Earth
+        - Genius
+        - Trygdekontoret
+        - Teenage Boss
+        - Sherlock
+        - Stranger Things
+#        - Prison Break
+#        - The Knick
+        - Trailer Park Boys
+        - Silicon Valley
+#        - Breaking Bad
+        - Westworld
+        - Planet Earth
+        - Planet Earth 2
+        - Planet Earth II
+        - Bobs Burgers
+        - Planet Earth Two
+        - Game of Thrones
+        - Arrested Development
+#        - MythBusters
+        - Hamiltons Pharmacopeia
+        - Black Mirror
+        - Mr. Robot
+        - Folkeopplysningen
+#        - 20 Aar Med Espen Eckbo
+#        - Downton Abbey
+#        - Chelsea
+#        - Indian Summers
+#        - The Office
+#        - South Park
+#        - Modern Family
+        - Adventure Time
+        - Noisey
+        - Narcos
+        - Saturday Night Live
+        - Better Call Saul
+        - Weediquette
+        - Balls Deep
+        - Gaycation
+        - Fuck Thats Delicious
+        - Huangs World
+        - Vice
+        - Vice On HBO
+        - Viceland
+#        - The Last Panthers
+        - Louis Theroux
+#        - The Simpsons
+        - Rick and Morty
+        - VICE Does America
+        - Black Market
+        - Black Market Dispatches
+        - Cyberwar
+        - Action Bronson And Friends Watch Ancient Aliens
+        - Abandoned
+        - Bong Apetit
+        - Vice Essentials
+        - VICE Lab
+
+    transmission:
+      enabled: yes
+      host: localhost
+      port: 9091
+      username: admin
+      password: admin
+
+    pushover:
+      user_key: u5YQXxZnUNixbXes3vnRCTQDeJpQ77
+      api_key: a44R1qvCyKqR8UwPvKh5w3WqZZmj1H
+
+tasks:
+
+  rarbg:
+    priority: 1
+    rss: https://rarbg.to/rss.php
+    template: tv
+
+  extratorrents:
+    priority: 5
+    rss: https://extratorrents.unblockall.xyz/rss.xml?type=popular&cid=8
+    template: tv
+
+  limetorrents:
+    priority: 4
+    rss: https://www.limetorrents.cc/rss/20/
+    template: tv
+
+  zooqle:
+    priority: 6
+    rss: https://zooqle.com/search?q=%2A&fmt=rss
+    template: tv
+
+  norbits.net:
+    priority: 7
+    rss: http://norbits.net/rss.php?feed=dl&passkey=74bc1121a91304aafb129c9dde9d8e95&format=bb
+    template: tv
+    private_torrents: yes
+
+  ezrss.it:
+    priority: 8
+    rss: https://eztv.ag/ezrss.xml
+    template: tv
+    verify_ssl_certificates: no
+
+  showrss.info:
+    priority: 9
+    rss: http://showrss.info/user/134388.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
+    template: tv

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>
+404 - Page not found
+</title>
+<style type="text/css">
+ body {background-color:black;}
+ p {color:#00A6D6; font-family:"Verdana, Arial, sans-serif"; font-size:25px; }
+ p.italic {color:#00A6D6; font-family:"Verdana, Arial, sans-serif"; font-size:25px; font-style:italic; }
+ p.oblique {color:#00A6D6; font-family:"Verdana, Arial, sans-serif"; font-size:25px; font-style:oblique; }
+ A:link { color:#00A6D6; font-family:"Verdana, Arial, sans-serif"}
+ </style>
+</head>
+<body>
+<center>
+<p>
+</p>
+<img height="150" src="/error-docs//telenorgroup-logo.jpg">
+<p class="italic"> Error - 404 - This page does not exist
+</p>
+<p class="oblique">
+<a href="javascript: history.go(-1)">Take me back to the previous page</a>
+</p>
+</center>
+</body>
+</html>
