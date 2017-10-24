@@ -8,65 +8,67 @@ templates:
           set:
             path: /Volumes/TV/{{series_name}}
       tv:
-        - Flaked
-        - Bravest Warriors
-        - The Last Man on Earth
-        - Genius
-        - Trygdekontoret
-        - Teenage Boss
-        - Sherlock
-        - Stranger Things
-#        - Prison Break
-#        - The Knick
-        - Trailer Park Boys
-        - Silicon Valley
-#        - Breaking Bad
-        - Westworld
-        - Planet Earth
-        - Planet Earth 2
-        - Planet Earth II
-        - Bobs Burgers
-        - Planet Earth Two
-        - Game of Thrones
-        - Arrested Development
-#        - MythBusters
-        - Hamiltons Pharmacopeia
-        - Black Mirror
-        - Mr. Robot
-        - Folkeopplysningen
-#        - 20 Aar Med Espen Eckbo
-#        - Downton Abbey
-#        - Chelsea
-#        - Indian Summers
-#        - The Office
-#        - South Park
-#        - Modern Family
+        - Abandoned
+        - Action Bronson And Friends Watch Ancient Aliens
         - Adventure Time
-        - Noisey
-        - Narcos
-        - Saturday Night Live
-        - Better Call Saul
-        - Weediquette
+        - Arrested Development
         - Balls Deep
-        - Gaycation
-        - Fuck Thats Delicious
-        - Huangs World
-        - Vice
-        - Vice On HBO
-        - Viceland
-#        - The Last Panthers
-        - Louis Theroux
-#        - The Simpsons
-        - Rick and Morty
-        - VICE Does America
+        - Better Call Saul
         - Black Market
         - Black Market Dispatches
-        - Cyberwar
-        - Action Bronson And Friends Watch Ancient Aliens
-        - Abandoned
+        - Black Mirror
+        - Bobs Burgers
         - Bong Apetit
+        - Bravest Warriors
+        - Curb Your Enthusiasm
+        - Cyberwar
+        - Flaked
+        - Folkeopplysningen
+        - Fuck Thats Delicious
+        - Game of Thrones
+        - Gaycation
+        - Genius
+        - Hamiltons Pharmacopeia
+        - Huangs World
+        - Louis Theroux
+        - Louis Theroux Dark States
+        - Mr. Robot
+        - Narcos
+        - Noisey
+        - Planet Earth
+        - Rick and Morty
+        - Saturday Night Live
+        - Sherlock
+        - Silicon Valley
+        - Stranger Things
+        - Teenage Boss
+        - The Last Man on Earth
+        - Trailer Park Boys
+        - Trygdekontoret
+        - Vice
+        - VICE Does America
         - Vice Essentials
         - VICE Lab
+        - Vice On HBO
+        - Viceland
+        - Weediquette
+        - Westworld
+#        - 20 Aar Med Espen Eckbo
+#        - Breaking Bad
+#        - Chelsea
+#        - Downton Abbey
+#        - Indian Summers
+#        - Modern Family
+#        - MythBusters
+#        - Planet Earth 2
+#        - Planet Earth II
+#        - Planet Earth Two
+#        - Prison Break
+#        - South Park
+#        - The Knick
+#        - The Last Panthers
+#        - The Office
+#        - The Simpsons
 
     transmission:
       enabled: yes
