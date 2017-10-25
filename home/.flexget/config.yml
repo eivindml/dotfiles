@@ -1,11 +1,5 @@
 templates:
   tv-template:
-    series:
-      settings:
-        tv-group:
-          propers: 7 days
-          set:
-            path: /Volumes/TV/{{series_name}}
     include: series.yml
 
     transmission:
