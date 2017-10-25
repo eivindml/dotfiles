@@ -8,14 +8,14 @@ templates:
       enabled: yes
       host: localhost
       port: 9091
-      username: '{? transmission.username ?}'
-      password: '{? transmission.password ?}'
+      username: {? transmission.username ?}
+      password: {? transmission.password ?}
 
 tasks:
 
   showrss.info:
     priority: 1
-    rss: http://showrss.info/user/'{? showrss.id ?}'.rss?magnets=true&namespaces=false&name=null&quality=anyhd&re=null
+    rss: http://showrss.info/user/{? showrss.id ?}.rss?magnets=true&namespaces=false&name=null&quality=anyhd&re=null
     template: tv-template
 
   rarbg:
@@ -30,7 +30,7 @@ tasks:
 
   norbits.net:
     priority: 4
-    rss: http://norbits.net/rss.php?feed=dl&passkey='{? norbits.passkey ?}'&format=bb
+    rss: http://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=bb
     template: tv-template
     private_torrents: yes
 
