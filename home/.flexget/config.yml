@@ -1,13 +1,12 @@
 templates:
-  tv:
+  tv-template:
     series:
       settings:
-        tv:
+        tv-group:
           propers: 7 days
           set:
             path: /Volumes/TV/{{series_name}}
-      tv:
-        include: series.yml
+    include: series.yml
 
     transmission:
       enabled: yes
@@ -18,25 +17,25 @@ templates:
 
 tasks:
 
-  showrss:
+  showrss.info:
     priority: 1
     rss: http://showrss.info/user/134388.rss?magnets=true&namespaces=false&name=null&quality=anyhd&re=null
-    template: tv
+    template: tv-template
 
   rarbg:
     priority: 2
     rss: https://rarbg.to/rss.php
-    template: tv
+    template: tv-template
 
   zooqle:
     priority: 3
     rss: https://zooqle.com/search?q=%2A&fmt=rss
-    template: tv
+    template: tv-template
 
-  norbits:
+  norbits.net:
     priority: 4
     rss: http://norbits.net/rss.php?feed=dl&passkey=74bc1121a91304aafb129c9dde9d8e95&format=bb
-    template: tv
+    template: tv-template
     private_torrents: yes
 
 
