@@ -8,8 +8,8 @@ templates:
       enabled: yes
       host: localhost
       port: 9091
-      username: {? transmission.username ?}
-      password: {? transmission.password ?}
+      username: '{? transmission.username ?}'
+      password: '{? transmission.password ?}'
 
 tasks:
 
