@@ -3,7 +3,7 @@ series:
     tv-group:
       propers: 7 days
       set:
-        path: /Volumes/TV/{{series_name}}
+        path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
     - Abandoned
     - Action Bronson And Friends Watch Ancient Aliens
