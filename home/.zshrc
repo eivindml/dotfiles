@@ -16,7 +16,7 @@ export PATH=$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
 
 # ALIASES
 alias \#=':' # Do nothing command. Usefule for commenting.
-alias ls='gls -aXF --color'
+alias ls='gls -XF --color'
 
 # CONFIGURATIONS
 
@@ -39,3 +39,9 @@ setopt SHARE_HISTORY
 # Auto start tmux session
 #if [ "$TMUX" = "" ]; then tmux; fi
 #export PATH="/usr/local/sbin:$PATH"
+
+# .zshrc
+autoload -U promptinit; promptinit
+prompt pure
+
+alias craftman="/Users/eivindml/.craftman/bin/craftman"

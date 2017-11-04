@@ -15,8 +15,8 @@ ln .lftprc ~/.lftprc
 rm ~/.gitconfig
 ln .gitconfig ~/.gitconfig
 
-rm ~/.gitignore
-ln .gitignore ~/.gitignore
+rm ~/.gitignore_global
+ln .gitignore_global ~/.gitignore_global
 
 rm ~/.hushlogin
 ln .hushlogin ~/.hushlogin

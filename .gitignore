@@ -6,3 +6,5 @@
 */.atom/.apm/
 */.atom/.node-gyp/
 */.atom/recovery/
+home/.vim/plugged/
+.DS_Store

@@ -27,6 +27,8 @@
       beautify_on_save: true
       fixers: "indentation,linefeed"
     sass: {}
+    twig:
+      beautify_on_save: true
   build:
     overrideThemeColors: false
   core:
@@ -41,21 +43,13 @@
       "markdown-themeable-pdf"
       "markdown-preview-plus"
       "emmet"
-      "atom-beautify"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
-    titleBar: "custom-inset"
   editor:
-    fontFamily: "Fira Mono"
+    fontFamily: "SF Mono"
     fontSize: 15
-    preferredLineLength: 120
     scrollPastEnd: true
-    showIndentGuide: true
-    softTabs: false
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-    tabLength: 4
     tabType: "soft"
   "exception-reporting":
     userId: "976749f0-a009-cf5a-3767-53e1f41246e1"
@@ -114,7 +108,6 @@
     alwaysOpenExisting: true
     autoReveal: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   "tree-view-sort":
     caseSensitive: false
