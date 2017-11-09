@@ -12,7 +12,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 
 # PATHS
 
-export PATH=$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
+export PATH=/Users/eivindml/.gem/ruby/2.3.0/bin:$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
 
 # ALIASES
 alias \#=':' # Do nothing command. Usefule for commenting.
@@ -44,4 +44,3 @@ setopt SHARE_HISTORY
 autoload -U promptinit; promptinit
 prompt pure
 
-alias craftman="/Users/eivindml/.craftman/bin/craftman"
