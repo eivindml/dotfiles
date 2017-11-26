@@ -16,7 +16,7 @@ templates:
       entries:
         via:
           - pushover:
-            user_key: '{? pushover.userkey ?}'
+              user_key: '{? pushover.userkey ?}'
 
 tasks:
 
