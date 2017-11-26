@@ -10,11 +10,13 @@ templates:
       port: 9091
       username: '{? transmission.username ?}'
       password: '{? transmission.password ?}'
-      notify:
-        entries:
-          via:
-            - pushover:
-              user_key: '{? pushover.userkey ?}'
+
+
+    notify:
+      entries:
+        via:
+          - pushover:
+            user_key: '{? pushover.userkey ?}'
 
 tasks:
 
