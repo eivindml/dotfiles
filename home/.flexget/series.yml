@@ -6,6 +6,7 @@ series:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
     - Abandoned
+    - Arrested Development
     - Action Bronson And Friends Watch Ancient Aliens
     - Adventure Time
     - Arrested Development
