@@ -27,17 +27,17 @@ tasks:
     template: tv-template
 
   rarbg-alt:
-    priority: 3
-    rss: https://rarbg.to/rss.php
+    priority: 2
+    rss: https://rarbg.to/rssdd.php?category=1;18;41;49
     template: tv-template
 
   zooqle:
-    priority: 4
+    priority: 3
     rss: https://zooqle.com/search?q=%2A&fmt=rss
     template: tv-template
 
   norbits.net:
-    priority: 5
+    priority: 4
     rss: http://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=bb
     template: tv-template
     private_torrents: yes
