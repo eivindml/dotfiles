@@ -1,0 +1,4 @@
+variables.yml
+flexget.log
+received/
+db-config.sqlite

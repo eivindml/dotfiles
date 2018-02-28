@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ApacheConf",
+		"Craft-Twig",
+		"Dotfiles Syntax Highlighting",
+		"EditorConfig",
+		"GitGutter",
+		"HTMLBeautify",
+		"nginx",
+		"Package Control",
+		"PHP-Twig",
+		"Sass",
+		"SASS Snippets",
+		"SideBarEnhancements",
+		"SublimeLinter-contrib-twiglint",
+		"Twig"
+	]
+}

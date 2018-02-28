@@ -1,0 +1,5 @@
+'.platform-darwin atom-workspace':
+  'ctrl-shift-t': 'todo-show:toggle'
+
+'.platform-win32 atom-workspace, .platform-linux atom-workspace':
+  'alt-shift-t': 'todo-show:toggle'
