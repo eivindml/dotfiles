@@ -1,0 +1,33 @@
+'menu': [
+  'label': 'Packages'
+  'submenu': [
+    'label': 'Todo-Show'
+    'submenu': [
+      {
+        'label': 'Find in Workspace'
+        'command': 'todo-show:find-in-workspace'
+      }
+      {
+        'label': 'Find in Project'
+        'command': 'todo-show:find-in-project'
+      }
+      {
+        'label': 'Find in Open Files'
+        'command': 'todo-show:find-in-open-files'
+      }
+      {
+        'label': 'Find in Active File'
+        'command': 'todo-show:find-in-active-file'
+      }
+    ]
+  ]
+]
+
+'context-menu':
+  '.show-todo-preview': [
+    {label: 'Save to file', command: 'core:save-as'}
+    {label: 'Refresh Todos', command: 'core:refresh'}
+  ],
+  '.tree-view': [
+    {label: 'Search for Todos', command: 'todo-show:toggle'}
+  ]
