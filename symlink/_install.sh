@@ -17,7 +17,7 @@ ln -f $DIR/.gitconfig ~/.gitconfig
 ln -f $DIR/.gitignore_global ~/.gitignore_global
 
 # Flexget
-ln -sfn $DIR/.flexget/ ~/.flexget
+ln -sfn $DIR/flexget/ ~/.flexget
 
 # Sublime Text
 ln -sfn $DIR/sublime ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
