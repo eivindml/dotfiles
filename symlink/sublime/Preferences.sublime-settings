@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Sixteen.tmTheme",
+	"font_face": "SF Mono Regular",
+	"font_size": 13,
+	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"theme": "macOS.sublime-theme"
+}

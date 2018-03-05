@@ -1,0 +1,25 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+
+			//application 1
+			{
+				"caption": "Sketch",
+				"id": "side-bar-files-open-with-sketch",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "Sketch.app", // OSX
+					"extensions":"sketch",  //any file with these extensions
+					"args":[]
+				},
+				"open_automatically" : true // will close the view/tab and launch the application
+			},
+
+			//separator
+			{"caption":"-"},
+		]
+	}
+]

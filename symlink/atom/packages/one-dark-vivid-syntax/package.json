@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+        "spec": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/apm-install-dir-118126-1064-14067ru.zigecrqkt9"
+    ]
+  ],
+  "_from": "../d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+  "_id": "one-dark-vivid-syntax@1.8.0",
+  "_inCache": true,
+  "_location": "/one-dark-vivid-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+    "spec": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+  "_shasum": "c236a85c33e9f68bcc752742294ac2c0759e0cdf",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/d-118126-1064-1qmnlbl.1gdgk138fr/package.tgz",
+  "_where": "/private/var/folders/0m/df5mbwnj1gb6ljzcy1r_7nn80000gn/T/apm-install-dir-118126-1064-14067ru.zigecrqkt9",
+  "bugs": {
+    "url": "https://github.com/simurai/one-dark-vivid-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "A more vivid One Dark Syntax theme",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/simurai/one-dark-vivid-syntax#readme",
+  "keywords": [
+    "vivid",
+    "dark",
+    "blue",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "one-dark-vivid-syntax",
+  "optionalDependencies": {},
+  "readme": "## One Dark Vivid Syntax\n\nThis Atom theme is identical to the original [One Dark](https://atom.io/themes/one-dark-syntax) theme, except that the colors are more __vivid__.\n\n![one-dark-syntax](https://cloud.githubusercontent.com/assets/378023/7783203/49271ef6-0174-11e5-8eb1-d80b8d34a0e3.png)\n\n> The font used in the screenshot is [Fira Mono](https://github.com/mozilla/Fira).\n\n\n### Install\n\n```\napm install one-dark-vivid-syntax\n```\n\nOr go to __Settings > Install__ and search for `one-dark-vivid-syntax`.\n\nThen after installing, select \"One Dark Vivid\" from the __Settings > Themes > Syntax Themes__ drop-down menu.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simurai/one-dark-vivid-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.8.0"
+}
