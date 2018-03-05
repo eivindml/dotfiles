@@ -1,0 +1,6 @@
+[
+	// swap the keybindings for paste and paste_and_indent
+	{"keys": ["super+v"], "command": "paste_and_indent"},
+	{"keys": ["super+shift+v"], "command": "paste"},
+	{"keys": ["command+shift+i"], "command": "reindent", "args": {"single_line": false}}
+]
