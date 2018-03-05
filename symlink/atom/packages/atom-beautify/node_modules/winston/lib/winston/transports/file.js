@@ -318,7 +318,8 @@ File.prototype.query = function (options, callback) {
 
     var time = new Date(log.timestamp);
     if ((options.from && time < options.from)
-        || (options.until && time > options.until)) {
+        || (options.until && time > options.until)
+        || (options.level && options.level !== log.level)) {
       return;
     }
 
@@ -530,7 +531,7 @@ File.prototype._createStream = function () {
 
         inp.pipe(gzip).pipe(out);
 
-        fs.unlink(String(self._archive));
+        fs.unlink(String(self._archive), function () {});
         self._archive = '';
       }
     }
@@ -677,7 +678,7 @@ File.prototype._lazyDrain = function () {
     this._draining = true;
 
     this._stream.once('drain', function () {
-      this._draining = false;
+      self._draining = false;
       self.emit('logged');
     });
   }
