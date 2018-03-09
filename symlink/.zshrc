@@ -44,3 +44,5 @@ setopt SHARE_HISTORY
 autoload -U promptinit; promptinit
 prompt pure
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
