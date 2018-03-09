@@ -1,8 +1,6 @@
 #!/bin/bash
 
-
 sh symlink/_install.sh
-
 
 # TODO: Add argument commands to script
 
