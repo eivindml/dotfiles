@@ -1,22 +1,23 @@
 # PLUGINS
 
 # Autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+#[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 # Syntax highlting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Auto suggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Color of autosuggestion
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 
 
 # PATHS
 
-export PATH=$HOME/.composer/vendor/bin:$HOME/.gem/ruby/2.3.0/bin:$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
+#export PATH=$HOME/.composer/vendor/bin:$HOME/.gem/ruby/2.3.0/bin:$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
 
 # ALIASES
 alias \#=':' # Do nothing command. Usefule for commenting.
-alias ls='gls -XF --color'
+#alias ls='gls -XF --color'
+alias ls='ls -Gap'
 
 # CONFIGURATIONS
 
@@ -41,8 +42,8 @@ setopt SHARE_HISTORY
 #export PATH="/usr/local/sbin:$PATH"
 
 # .zshrc
-autoload -U promptinit; promptinit
-prompt pure
+#autoload -U promptinit; promptinit
+#prompt pure
 
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
