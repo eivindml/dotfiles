@@ -64,8 +64,10 @@ let g:NERDTreeGitStatusNodeColorization = 1
 let g:NERDTreeWinSize = 45
 
 " vim-gitgutter
-let g:UltiSnipsSnippetsDir = "~/Documents/dotfiles/symlink/.vim/snippets"
 set updatetime=1000 " Update time for vim-gitgutter in ms
+
+" UltiSnips
+let g:UltiSnipsSnippetsDir = "~/Documents/dotfiles/symlink/.vim/snippets"
 
 " CtrlP
 let g:ctrlp_show_hidden = 1 " Also search hidden files
