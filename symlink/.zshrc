@@ -16,10 +16,10 @@
 
 # ALIASES
 alias \#=':' # Do nothing command. Usefule for commenting.
-#alias ls='gls -XF --color'
-alias ls='ls -Gap'
+#alias ls='gls -xf --color'
+# alias ls='ls -gap'
 
-# CONFIGURATIONS
+# configurations
 
 # Prompt
 ZLE_RPROMPT_INDENT=0
