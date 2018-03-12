@@ -11,4 +11,4 @@ chsh -s /bin/zsh
 # end tell
 # END
 
-sudo scutil --set HostName rocketship
+sudo scutil --set HostName fox

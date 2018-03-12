@@ -14,6 +14,7 @@ Plug 'octref/RootIgnore'
 Plug 'lumiliet/vim-twig'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'chr4/nginx.vim'
 call plug#end()
 
 " Key mappings
@@ -45,8 +46,8 @@ syntax on
 filetype plugin on
 colorscheme dracula
 
-set textwidth = 79
-set colorcolumn = 80
+set textwidth=79
+set colorcolumn=80
 set number
 set relativenumber
 
@@ -84,3 +85,7 @@ autocmd VimEnter * wincmd p
 " Close NERDTree if it's the last window in vim
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" File Types
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+au BufRead,BufNewFile */nginx/servers/*.conf set ft=nginx
