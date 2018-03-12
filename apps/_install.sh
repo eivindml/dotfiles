@@ -21,8 +21,8 @@ cat Caskfile | xargs brew cask install
 
 which -s mas
 if [[ $? != 0 ]] ; then
-    echo "Install mas with homebrew first. ☠️"
-    return
+  echo "Install mas with homebrew first. ☠️"
+  return
 fi
 
 grep "^[^#]" Masfile | xargs mas install
@@ -64,4 +64,4 @@ cat Tlmgrfile | xargs tlmgr install
 ################################################################################
 
 # Sketchtool
-# sh /Applications/Sketch.app/Contents/Resources/sketchtool/install.sh
+sh /Applications/Sketch.app/Contents/Resources/sketchtool/install.sh
