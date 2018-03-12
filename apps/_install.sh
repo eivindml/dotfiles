@@ -1,13 +1,5 @@
 #!/bin/bash
 
-function sub_install {
-  cd $1
-  bash _install.sh
-  cd ../
-}
-
-# Homebrew should run first, as a lot depends on this
-
 # Check if Homebrew is installed
 which -s brew
 if [[ $? != 0 ]] ; then
