@@ -2,26 +2,26 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/Documents/dotfiles/symlink/.vim/plugged')
-Plug 'itchyny/lightline.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-fugitive'
+Plug 'SirVer/ultisnips'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'SirVer/ultisnips'
-Plug 'octref/RootIgnore'
-Plug 'lumiliet/vim-twig'
-Plug 'scrooloose/nerdcommenter'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'chr4/nginx.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'editorconfig/editorconfig-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'lumiliet/vim-twig'
+Plug 'octref/RootIgnore'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Key mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let mapleader = " "
-nmap <leader>ne :NERDTree<cr>
+"nmap <leader>ne :NERDTree<cr>
 
 nmap <leader>q :q<cr>
 nmap <leader>w :w<cr>
@@ -77,6 +77,8 @@ let g:lightline = {
       \ 'colorscheme': 'Dracula',
       \ }
 
+let g:easytree_flag_format = "%s %s"
+
 " Auto Commands (Launch on Login)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -91,3 +93,4 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 au BufRead,BufNewFile */nginx/servers/*.conf set ft=nginx
+

@@ -1,43 +1,20 @@
-# Plugins
+# Antigen Setup and Plugins
 ###############################################################################
 
-# Autojump
-# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+source ~/.zsh/antigen/antigen.zsh
 
-# Syntax highlting
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
 
-# Auto suggestions
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Color of autosuggestion
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
+# Tell Antigen that you're done.
+antigen apply
 
-# Paths
+# Source Config Files
 ###############################################################################
 
-# export PATH=$HOME/.composer/vendor/bin:$HOME/.gem/ruby/2.3.0/bin:$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
-
-# Aliases
-###############################################################################
-
-alias \#=':' # Do nothing command. Usefule for commenting.
-alias ls='ls -Gp' # Adds coloring and trailing slash to folders.
-
-# Configurations
-###############################################################################
-
-# Prompt Styling
-setopt PROMPT_SUBST
-PROMPT='%F{cyan}${PWD/$HOME/~}
-%B%F{white}❯%f%b '
-
-# History
-SAVEHIST=1000000
-HISTSIZE=1000000
-HISTFILE=~/.zhistory
-setopt APPEND_HISTORY
-setopt EXTENDED_HISTORY
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
-
+# source ~/.zsh/options.zsh
