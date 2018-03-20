@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 A better dotfile configuration, aiming for good organization, structure and
 adaptability. Most other configuration are messy, require dependencies, hard to
@@ -26,9 +26,13 @@ I have divided all dotfile related stuff into four sub-folders (for now).
 └── bootstrap.sh 
 ```
 
-- **app/** is responsible for installing all global apps/software/utilities. E.g. through brew, cask, mas, npm, gem.
-- **symlink/** is for all files which belongs to `$HOME` dir and other config files. Typically symlinked files/folders.
-- **macos/** is for os configuration. Ideally all settings changes to the os  should be defined here, so that everything can be set back to normal after a reinstall with one command.
+- **app/** is responsible for installing all global apps/software/utilities.
+  E.g. through brew, cask, mas, npm, gem.
+- **symlink/** is for all files which belongs to `$HOME` dir and other config
+  files. Typically symlinked files/folders.
+- **macos/** is for os configuration. Ideally all settings changes to the os
+  should be defined here, so that everything can be set back to normal after a
+reinstall with one command.
 
 Each folder have a file named `_install.sh`, which are responsible for
 configuring/installing the content inside itself. 

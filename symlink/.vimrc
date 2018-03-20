@@ -2,6 +2,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/Documents/dotfiles/symlink/.vim/plugged')
+Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'SirVer/ultisnips'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
@@ -38,6 +39,9 @@ nnoremap <tab><tab> <c-w><c-w>
 
 " Change mode with 'jj'
 inoremap jj <Esc>
+
+" vim-markdown-preview
+let vim_markdown_preview_hotkey='<leader>m'
 
 " Other
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -78,6 +82,12 @@ let g:lightline = {
       \ }
 
 let g:easytree_flag_format = "%s %s"
+
+" vim-markdown-preview
+" Set to use grip and Github flavoured markdown
+let vim_markdown_preview_github=1
+let vim_markdown_preview_toggle=2
+" let vim_markdown_preview_temp_file=1
 
 " Auto Commands (Launch on Login)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
