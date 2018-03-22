@@ -8,6 +8,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'chr4/nginx.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
@@ -88,6 +89,10 @@ let g:easytree_flag_format = "%s %s"
 let vim_markdown_preview_github=1
 let vim_markdown_preview_toggle=2
 " let vim_markdown_preview_temp_file=1
+
+" vim-table-mode
+" Set mode for markdown tables
+let g:table_mode_corner='|'
 
 " Auto Commands (Launch on Login)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
