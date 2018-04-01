@@ -9,6 +9,7 @@ ln -f $DIR/.lftprc ~/.lftprc
 ln -f $DIR/.tmux.conf ~/.tmux.conf
 ln -f $DIR/.vimrc ~/.vimrc
 ln -f $DIR/.zshrc ~/.zshrc
+ln -sfn $DIR/.zsh/ ~/.zsh
 ln -sfn $DIR/.flexget/ ~/.flexget
 ln -sfn $DIR/.vim/ ~/.vim
 ln -sfn $DIR/nginx /usr/local/etc/nginx
