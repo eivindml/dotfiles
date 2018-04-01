@@ -1,6 +1,10 @@
+grip
+imagemagick
+lftp
 mariadb
 mas
-node
 nginx
+node
+now
 php71
-php-cs-fixer
+tmux
