@@ -1,0 +1,75 @@
+series:
+  settings:
+    tv-group:
+      propers: 7 days
+      quality: 720p+ hdtv
+      set:
+        path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
+  tv-group:
+    - Adventure Time
+    - Arrested Development
+    - Barry
+    - Better Call Saul
+    - Black Mirror
+    - Bobs Burgers
+    - Barry
+    - Curb Your Enthusiasm
+    - Flaked
+    - Game of Thrones
+    - Hamiltons Pharmacopeia
+    - High Maintenance
+    - Mr. Robot
+    - Nathan For You
+    - Rick and Morty
+    - Silicon Valley
+    - Stranger Things
+    - Trygdekontoret
+    - The Handmaids Tale
+    - The Last Man on Earth
+    - Trailer Park Boys
+    - Vice
+    - Westworld
+    # - 20 Aar Med Espen Eckbo
+    # - Abandoned
+    # - Action Bronson And Friends Watch Ancient Aliens
+    # - Balls Deep
+    # - Black Market
+    # - Black Market Dispatches
+    # - Bong Apetit
+    # - Bravest Warriors
+    # - Breaking Bad
+    # - Chelsea
+    # - Cyberwar
+    # - Downton Abbey
+    # - Folkeopplysningen
+    # - Fuck Thats Delicious
+    # - Gaycation
+    # - Genius
+    # - Huangs World
+    # - Indian Summers
+    # - Louis Theroux
+    # - Louis Theroux Dark States
+    # - Modern Family
+    # - MythBusters
+    # - Narcos
+    # - Noisey
+    # - Planet Earth
+    # - Planet Earth 2
+    # - Planet Earth II
+    # - Planet Earth Two
+    # - Prison Break
+    # - Saturday Night Live
+    # - Sherlock
+    # - South Park
+    # - Teenage Boss
+    # - The Knick
+    # - The Last Panthers
+    # - The Office
+    # - The Simpsons
+    # - Trygdekontoret
+    # - VICE Does America
+    # - Vice Essentials
+    # - VICE Lab
+    # - Vice On HBO
+    # - Viceland
+    # - Weediquette

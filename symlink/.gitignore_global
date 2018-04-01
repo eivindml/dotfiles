@@ -1,3 +1,13 @@
+# macOS
 .DS_Store
-.DS_Store/
-#*.icloud
+*.icloud
+
+# Node
+npm-debug.log
+
+# Vim
+*~
+
+# General
+log/
+*.log

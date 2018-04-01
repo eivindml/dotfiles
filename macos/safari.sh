@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# SAFARI
-
 # View full URL i status bar
-#defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
 # Enable the Develop menu and the Web Inspector in Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
