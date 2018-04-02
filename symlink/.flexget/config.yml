@@ -11,14 +11,6 @@ templates:
       username: '{? transmission.username ?}'
       password: '{? transmission.password ?}'
 
-    notify:
-      entries:
-        title: Downloading {{series_name}}
-        message: Episode {{series_id}}
-        via:
-          - pushover:
-              user_key: '{? pushover.userkey ?}'
-
 tasks:
 
   showrss.info:
