@@ -17,13 +17,14 @@ Plug 'octref/RootIgnore'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " Key mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let mapleader = " "
-"nmap <leader>ne :NERDTree<cr>
+nmap <leader>ne :NERDTree<cr>
 
 nmap <leader>q :q<cr>
 nmap <leader>w :w<cr>
@@ -44,6 +45,11 @@ inoremap jj <Esc>
 " vim-markdown-preview
 let vim_markdown_preview_hotkey='<leader>m'
 
+" UtilSnips
+ let g:UltiSnipsExpandTrigger="<tab>"                                            
+ let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
+ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"     
+
 " Other
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -55,6 +61,7 @@ set textwidth=79
 set colorcolumn=80
 set number
 set relativenumber
+set nowrap
 
 " Configuration of Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,6 +83,7 @@ let g:UltiSnipsSnippetsDir = "~/Documents/dotfiles/symlink/.vim/snippets"
 
 " CtrlP
 let g:ctrlp_show_hidden = 1 " Also search hidden files
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " Lightline
 let g:lightline = {
