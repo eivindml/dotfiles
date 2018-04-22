@@ -1,4 +1,5 @@
 series:
+
   settings:
     tv-group:
       propers: 7 days
@@ -26,7 +27,12 @@ series:
     - The Last Man on Earth
     - Trailer Park Boys
     - Trygdekontoret
-    - Vice
+    #- Trygdekontoret Dokumentar:
+        #identified_by: id
+        #name_regexp: ^trygdekontoret.dokumentar
+        #id_regexp: .*
+    - Vice:
+        identified_by: ep
     - Westworld
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
