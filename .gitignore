@@ -8,6 +8,4 @@ symlink/flexget/flexget.log
 symlink/m2/*
 symlink/*
 !symlink/_install.sh
-apps/*
-!aüpps/_install.sh
 note.txt

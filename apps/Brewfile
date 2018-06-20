@@ -1,5 +1,11 @@
+composer
 grip
+imagemagick
 lftp
+mariadb
 mas
+nginx
+node
 now
+php71
 tmux
