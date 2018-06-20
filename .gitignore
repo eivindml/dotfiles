@@ -9,3 +9,5 @@ symlink/m2/*
 symlink/*
 !symlink/_install.sh
 note.txt
+apps/*
+!apps/_install.sh

@@ -4,10 +4,6 @@ A better dotfile configuration, aiming for good organization, structure and
 adaptability. Most other configuration are messy, require dependencies, hard to
 grasp and too opinionated.
 
-## To Do
-
-- move .antigen
-
 ## How to install? 🤔
 
 Clone the repository to a prefered location (e.g. `~/dotfiles`) and run
