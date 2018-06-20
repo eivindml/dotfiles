@@ -16,7 +16,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.Dock autohide -bool true
 
 # Change desktop background
-# osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Library/Desktop Pictures/Yosemite 4.jpg"'
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Library/Desktop Pictures/Yosemite 4.jpg"'
 
 # Change default finder window
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
