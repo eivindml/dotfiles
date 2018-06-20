@@ -1,8 +1,12 @@
-# Dotfiles
+# Dotfiles 👾
 
 A better dotfile configuration, aiming for good organization, structure and
 adaptability. Most other configuration are messy, require dependencies, hard to
 grasp and too opinionated.
+
+## To Do
+
+- move .antigen
 
 ## How to install? 🤔
 
@@ -22,8 +26,9 @@ I have divided all dotfile related stuff into four sub-folders (for now).
 .  
 ├── apps 
 ├── macos 
-├── symlink 
-└── bootstrap.sh 
+├── symlink ── vimrc ...
+|		     '── vim ...
+└── bootstrap.sh
 ```
 
 - **app/** is responsible for installing all global apps/software/utilities.
@@ -44,12 +49,20 @@ commenting one line.
 All apps are defined in the files `Brewfile`, `Caskfile`, `Masfile` (Apple
 Store apps), `Gemfile` and `Npmfile` (node package).
 
-`install.sh` will run each `_install.sh` defined in all subfolders, while
+`bootstrap.sh` will run each `_install.sh` defined in all subfolders, while
 `update.sh` will run updates for macos and all installed package managers.
 
 ## How it looks
 
 ![Current screenshot](.github/screenshot.png)
+
+## The small things
+
+If you like to change your dotfiles directory, don't forget to alter the path 
+for `vim-plug` and `vim-snippets` within `vimrc`.
+
+Within `symlink` I tossed all dots of dotfiles away. So you are able to
+access them via Finder and of course without revealing invisible files.
 
 ## Contributions
 

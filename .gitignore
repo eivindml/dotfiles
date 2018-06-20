@@ -4,3 +4,10 @@ plugged
 symlink/flexget/received/
 symlink/flexget/db-config.sqlite
 symlink/flexget/flexget.log
+.gitignore
+symlink/m2/*
+symlink/*
+!symlink/_install.sh
+apps/*
+!aüpps/_install.sh
+note.txt

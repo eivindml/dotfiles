@@ -1,11 +1,5 @@
 #!/bin/bash
 
-sh symlink/_install.sh
-
-# TODO: Add argument commands to script
-
-#!/bin/bash
-
 install_title() {
 	read -r -p "Do you want to update $1? [y/N] " response
 	if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
@@ -25,6 +19,22 @@ install_commands() {
 	done
 }
 
+echo "It's recomended you perform an data backup before you proceed"
+
+if install_title "symbolic links"
+then
+sh symlink/_install.sh
+fi
+
+if install_title "/ install apps"
+then
+sh apps/_install.sh
+fi
+
+if install_title "/ change macOS app settings"
+then
+sh macos/_install.sh
+fi
 
 if install_title "core macOS software"
 then
