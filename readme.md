@@ -23,7 +23,6 @@ I have divided all dotfile related stuff into four sub-folders (for now).
 ├── apps 
 ├── macos 
 ├── symlink ── vimrc ...
-|		     '── vim ...
 └── bootstrap.sh
 ```
 
@@ -56,6 +55,10 @@ Store apps), `Gemfile` and `Npmfile` (node package).
 
 If you like to change your dotfiles directory, don't forget to alter the path 
 for `vim-plug` and `vim-snippets` within `vimrc`.
+
+Please don't forget to add your Name and eMail Address within `symlink/gitconfig`.
+I set a pseudonym, so you are not accedentilly commiting the name of the Author 
+of this project. &#x1F609;
 
 Within `symlink` I tossed all dots of dotfiles away. So you are able to
 access them via Finder and of course without revealing invisible files.
