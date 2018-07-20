@@ -1,5 +1,5 @@
 #!/bin/bash
 
-bash os.sh
-bash safari.sh
-bash terminal.sh
+bash macos/os.sh
+bash macos/safari.sh
+bash macos/terminal.sh

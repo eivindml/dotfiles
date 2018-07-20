@@ -4,13 +4,13 @@
 chsh -s /bin/zsh
 
 # Change computer name
-sudo scutil --set HostName fox
+sudo scutil --set HostName Elysium
 
 # Change terminal profile to a modified Dracula theme
 osascript<<END
 tell application "Terminal"
   set themeName to "dracula"
-  do shell script "open '" & themeName & ".terminal'"
+  do shell script "open '" & "macos/" & themeName & ".terminal'"
 	set default settings to settings set themeName
 end tell
 END

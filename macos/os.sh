@@ -18,9 +18,9 @@ defaults write com.apple.Dock autohide -bool true
 # Change desktop background
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Library/Desktop Pictures/Yosemite 4.jpg"'
 
-# Change defalt finder window
+# Change default finder window
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Documents/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Don't show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
