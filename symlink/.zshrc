@@ -1,22 +1,23 @@
-# Antigen Setup and Plugins
+# Aliases
 ###############################################################################
 
-source ~/.zsh/antigen/antigen.zsh
+alias \#=':' # Do nothing command. Useful for commenting.
+alias ls='ls -Gp' # Adds coloring and trailing slash to folders.
 
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
 
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
-antigen bundle dracula/zsh
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Tell Antigen that you're done.
-antigen apply
-
-# Source Config Files
+# Configurations
 ###############################################################################
 
-ZSH_THEME="dracula"
-# source ~/.zsh/options.zsh
+# Prompt Styling
+setopt PROMPT_SUBST
+PROMPT='${PWD/$HOME/~}
+> '
+
+# History
+SAVEHIST=1000000
+HISTSIZE=1000000
+HISTFILE=~/.zhistory
+setopt APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
