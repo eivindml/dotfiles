@@ -12,11 +12,8 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Enable auto hiding of Dock
-defaults write com.apple.Dock autohide -bool true
-
 # Change desktop background
-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Library/Desktop Pictures/Yosemite 4.jpg"'
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Library/Desktop Pictures/Sierra 2.jpg"'
 
 # Change defalt finder window
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
