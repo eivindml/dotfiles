@@ -8,10 +8,6 @@ if [[ $? != 0 ]] ; then
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Add taps for services, and old php compatible with Craft
-brew tap homebrew/services
-brew tap homebrew/homebrew-php
-
 # Installing brews and casks
 cat Brewfile | xargs brew install
 cat Caskfile | xargs brew cask install
@@ -52,13 +48,13 @@ cat Gemfile | xargs sudo gem install
 # LaTeX Packages
 ################################################################################
 
-which -s tlmgr
-if [[ $? != 0 ]] ; then
-    echo "Install basictex/mactex or just tlmgr using homebrew first. ☠️"
-    return
-fi
+# which -s tlmgr
+# if [[ $? != 0 ]] ; then
+#     echo "Install basictex/mactex or just tlmgr using homebrew first. ☠️"
+#     return
+# fi
 
-cat Tlmgrfile | xargs tlmgr install
+# cat Tlmgrfile | xargs tlmgr install
 
 # Custom
 ################################################################################

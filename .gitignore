@@ -1,6 +1,2 @@
 .DS_Store
 *.swp
-plugged
-symlink/flexget/received/
-symlink/flexget/db-config.sqlite
-symlink/flexget/flexget.log
