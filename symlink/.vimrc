@@ -9,7 +9,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'chr4/nginx.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'lumiliet/vim-twig'
@@ -46,19 +45,21 @@ inoremap jj <Esc>
 let vim_markdown_preview_hotkey='<leader>m'
 
 " UtilSnips
- let g:UltiSnipsExpandTrigger="<tab>"                                            
- let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
- let g:UltiSnipsJumpBackwardTrigger="<s-tab>"     
+ let g:UltiSnipsExpandTrigger="<tab>"
+ let g:UltiSnipsJumpForwardTrigger="<tab>"
+ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Other
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 syntax on
 filetype plugin on
-colorscheme dracula
+
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+set fillchars=""
 
 set textwidth=79
-set colorcolumn=80
+" set colorcolumn=80
 set number
 set relativenumber
 set nowrap
@@ -71,12 +72,12 @@ let NERDTreeRespectWildIgnore = 1
 let NERDTreeIgnore = ['\.git$']
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
-let NERDTreeShowHidden = 1
+let NERDTreeShowHidden = 0
 let g:NERDTreeGitStatusNodeColorization = 1
-let g:NERDTreeWinSize = 45
+let g:NERDTreeWinSize = 35
 
 " vim-gitgutter
-set updatetime=1000 " Update time for vim-gitgutter in ms
+set updatetime=5000 " Update time for vim-gitgutter in ms
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir = "~/Documents/dotfiles/symlink/.vim/snippets"
@@ -84,11 +85,6 @@ let g:UltiSnipsSnippetsDir = "~/Documents/dotfiles/symlink/.vim/snippets"
 " CtrlP
 let g:ctrlp_show_hidden = 1 " Also search hidden files
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
-" Lightline
-let g:lightline = {
-      \ 'colorscheme': 'Dracula',
-      \ }
 
 let g:easytree_flag_format = "%s %s"
 
@@ -116,4 +112,3 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 au BufRead,BufNewFile */nginx/servers/*.conf set ft=nginx
-
