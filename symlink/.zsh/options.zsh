@@ -22,7 +22,7 @@
 ###############################################################################
 
 alias \#=':' # Do nothing command. Usefule for commenting.
-alias ls='ls -Gp' # Adds coloring and trailing slash to folders.
+alias ls='ls -G' # Adds coloring and trailing slash to folders.
 
 # Useful Commands
 ###############################################################################
@@ -35,15 +35,14 @@ alias ls='ls -Gp' # Adds coloring and trailing slash to folders.
 
 # Prompt Styling
 setopt PROMPT_SUBST
-PROMPT='%F{cyan}${PWD/$HOME/~}
-%B%F{white}❯%f%b '
+PROMPT='%F{white}${PWD/$HOME/~} %F{black}
+> '
 
 # History
-SAVEHIST=1000000
-HISTSIZE=1000000
+SAVEHIST=1000
+HISTSIZE=1000
 HISTFILE=~/.zhistory
 setopt APPEND_HISTORY
 setopt EXTENDED_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
-
