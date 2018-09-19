@@ -1,5 +1,4 @@
 series:
-
   settings:
     tv-group:
       propers: 7 days
@@ -9,31 +8,50 @@ series:
   tv-group:
     - Adventure Time
     - Arrested Development
-    - Barry
+    - Barry:
+        set:
+          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
     - Better Call Saul
     - Black Mirror
-    - Bobs Burgers
+    - Bobs Burgers:
+        set:
+          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
     - Curb Your Enthusiasm
+    - Det kunne vært verre
+    - Det kunne vaert verre
+    - Det kunne vert verre
     - Flaked
-    - Game of Thrones
+    #- Game of Thrones
     - Hamiltons Pharmacopeia
     - High Maintenance
-    - Mr. Robot
+    - Mr. Robot:
+        set:
+          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
     - Nathan For You
     - Rick and Morty
-    - Silicon Valley
+    - Silicon Valley:
+        set:
+          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
     - Stranger Things
-    - The Handmaids Tale
+    #- The Handmaids Tale
     - The Last Man on Earth
+    - Folkeopplysningen
     - Trailer Park Boys
     - Trygdekontoret
+    - Disenchantment
+    - Watchmen
+    - Who Is America
     #- Trygdekontoret Dokumentar:
         #identified_by: id
         #name_regexp: ^trygdekontoret.dokumentar
         #id_regexp: .*
     - Vice:
         identified_by: ep
-    - Westworld
+        set:
+          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
+    - Westworld:
+        set:
+          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
