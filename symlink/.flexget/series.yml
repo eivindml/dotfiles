@@ -41,17 +41,13 @@ series:
     - Disenchantment
     - Watchmen
     - Who Is America
+    - Vice:
+        identified_by: ep
+    - Westworld
     #- Trygdekontoret Dokumentar:
         #identified_by: id
         #name_regexp: ^trygdekontoret.dokumentar
         #id_regexp: .*
-    - Vice:
-        identified_by: ep
-        set:
-          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
-    - Westworld:
-        set:
-          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
