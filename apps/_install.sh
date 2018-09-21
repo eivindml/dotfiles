@@ -45,17 +45,6 @@ fi
 
 cat Gemfile | xargs sudo gem install
 
-# LaTeX Packages
-################################################################################
-
-# which -s tlmgr
-# if [[ $? != 0 ]] ; then
-#     echo "Install basictex/mactex or just tlmgr using homebrew first. ☠️"
-#     return
-# fi
-
-# cat Tlmgrfile | xargs tlmgr install
-
 # Custom
 ################################################################################
 

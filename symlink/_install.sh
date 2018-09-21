@@ -10,3 +10,4 @@ ln -f $DIR/.vimrc ~/.vimrc
 ln -f $DIR/.zshrc ~/.zshrc
 ln -sfn $DIR/.flexget/ ~/.flexget
 ln -sfn $DIR/.vim/ ~/.vim
+ln -sfn $DIR/fish/ ~/.config/fish
