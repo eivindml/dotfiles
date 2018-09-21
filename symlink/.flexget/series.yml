@@ -8,46 +8,33 @@ series:
   tv-group:
     - Adventure Time
     - Arrested Development
-    - Barry:
-        set:
-          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
+    - Barry
     - Better Call Saul
     - Black Mirror
-    - Bobs Burgers:
-        set:
-          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
+    - Bobs Burgers
     - Curb Your Enthusiasm
-    - Det kunne vært verre
     - Det kunne vaert verre
     - Det kunne vert verre
+    - Det kunne vært verre
+    - Disenchantment
     - Flaked
-    #- Game of Thrones
+    - Folkeopplysningen
     - Hamiltons Pharmacopeia
     - High Maintenance
-    - Mr. Robot:
-        set:
-          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
+    - Mr. Robot
     - Nathan For You
+    - Norm Macdonald Has a Show
     - Rick and Morty
-    - Silicon Valley:
-        set:
-          path: /Volumes/TV II/{{series_name}}/Season {{series_season}}/
+    - Silicon Valley
     - Stranger Things
-    #- The Handmaids Tale
     - The Last Man on Earth
-    - Folkeopplysningen
     - Trailer Park Boys
     - Trygdekontoret
-    - Disenchantment
-    - Watchmen
-    - Who Is America
     - Vice:
         identified_by: ep
+    - Watchmen
+    - Who Is America
     - Westworld
-    #- Trygdekontoret Dokumentar:
-        #identified_by: id
-        #name_regexp: ^trygdekontoret.dokumentar
-        #id_regexp: .*
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
@@ -87,8 +74,14 @@ series:
     # - The Simpsons
     # - Trygdekontoret
     # - VICE Does America
-    # - VICE Lab
     # - Vice Essentials
+    # - VICE Lab
     # - Vice On HBO
     # - Viceland
     # - Weediquette
+    # - Game of Thrones
+    # - The Handmaids Tale
+    #- Trygdekontoret Dokumentar:
+        #identified_by: id
+        #name_regexp: ^trygdekontoret.dokumentar
+        #id_regexp: .*

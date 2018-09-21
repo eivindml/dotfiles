@@ -1,1 +1,3 @@
 # `dotfiles`
+
+Minimalist dotfiles configuration.

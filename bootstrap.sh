@@ -1,8 +1,22 @@
 #!/bin/bash
 
-sh symlink/_install.sh
+# TODO: Differentiate between install and update,
+# add call to install scripts in subdirs
 
-# TODO: Add argument commands to script
+cd apps/
+sh _install.sh
+
+cd ../macos/
+sh _install.sh
+
+cd ../symlink/
+sh _install.sh
+
+# TODO: Add argument commands to script (for install vs update)
+
+# TODO: Add nice printouts throughout, and remove unwanted printouts. Maybe just a loading spinner for each step.
+
+# TODO: Ask for sudo as first thing, so we don't need it later on.
 
 #!/bin/bash
 
@@ -10,17 +24,15 @@ install_title() {
 	read -r -p "Do you want to update $1? [y/N] " response
 	if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 	then
-		echo "✅"
 		return 0
 	else
-		echo "⛔️"
 		return 1
 	fi
 }
 
 install_commands() {
 	while read -r line
-	do 
+	do
 		eval $line
 	done
 }
@@ -50,8 +62,8 @@ if install_title "brew cask packages"
 then
 install_commands <<EOF
 brew cask outdated
-brew cu --all --cleanup
-brew cask cleanup
+brew cask upgrade
+brew cleanup
 EOF
 fi
 
@@ -80,13 +92,3 @@ sudo gem update
 sudo gem cleanup
 EOF
 fi
-
-if install_title "LaTeX"
-then
-install_commands <<EOF
-sudo tlmgr update --self
-sudo tlmgr update --list
-sudo tlmgr update --all
-EOF
-fi
-

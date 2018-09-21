@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# TODO: Simplify this file so that a function does everything
+# TODO: Add comment support for all files
+# TODO: Get highlighting of files, and add icons to them
+
 # Homebrew Brews & Casks
 ################################################################################
 
@@ -21,7 +25,7 @@ if [[ $? != 0 ]] ; then
   return
 fi
 
-grep "^[^#]" Masfile | xargs mas install
+grep "^[^# ]" Masfile | xargs mas install
 
 # Node Pacakges
 ################################################################################
@@ -44,9 +48,3 @@ if [[ $? != 0 ]] ; then
 fi
 
 cat Gemfile | xargs sudo gem install
-
-# Custom
-################################################################################
-
-# Sketchtool
-sh /Applications/Sketch.app/Contents/Resources/sketchtool/install.sh
