@@ -36,7 +36,7 @@ install_dependencies() {
 # The output from each install sequence is silenced.
 install_apps() {
   for file in "${!files[@]}"; do
-    echo "Installing apps in $file …"
+    echo -e "Installing apps in \e[33m$file\e[39m …"
     grep "^[^# ]" $file | xargs ${files[$file]} &> /dev/null
   done
 }
