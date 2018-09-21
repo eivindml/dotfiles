@@ -18,7 +18,7 @@ tasks:
     rss: http://showrss.info/user/{? showrss.id ?}.rss?magnets=true&namespaces=false&name=null&quality=anyhd&re=null
     template: tv-template
 
-  rarbg-alt:
+  rarbg:
     priority: 2
     rss: https://rarbg.to/rssdd.php?category=1;18;41;49
     template: tv-template
@@ -33,5 +33,3 @@ tasks:
     rss: http://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=bb
     template: tv-template
     private_torrents: yes
-
-
