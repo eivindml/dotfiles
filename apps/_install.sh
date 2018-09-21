@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make sure the folder is root
+cd $(dirname $0)
+
 # TODO: Simplify this file so that a function does everything
 # TODO: Add comment support for all files
 # TODO: Get highlighting of files, and add icons to them
