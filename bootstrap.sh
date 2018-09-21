@@ -18,39 +18,37 @@
 ##   -i      Install dotfiles to system.
 ##   -u      Updates all software packages on system.
 
+# Declares a dictionary containing the
+# name of package manager and commands to
+# update the given packages.
+declare -A files
+files=(
+  ["macOS"]="softwareupdate --install --all"
+  ["Brew"]="brew update && brew upgrade && brew cleanup"
+  ["Brew Cask"]="brew cask upgrade && brew cleanup -s"
+  ["App Store"]="mas upgrade"
+  ["Npm"]="npm update -g"
+  ["Gem"]="sudo gem update --system && sudo gem update --no-verbose && sudo gem cleanup"
+)
 
 # Installs apps (apps/),
 # system settings (macos)
 # and symlinks (symlink/).
 run_install() {
-  bash */_install.sh
+  for i in * ; do
+  if [ -d "$i" ]; then
+    bash $(basename "$i")'/_install.sh'
+  fi
+done
 }
 
 # Update all apps
 # installed on the system.
 run_update() {
-  echo "Updating macOS System …"
-  softwareupdate --install --all &> /dev/null
-
-  echo "Updating Brew …"
-  brew update &> /dev/null
-  brew upgrade &> /dev/null
-  brew cleanup -s &> /dev/null
-
-  echo "Updating Brew Casks …"
-  brew cask upgrade &> /dev/null
-  brew cleanup &> /dev/null
-
-  echo "Updating App Store …"
-  mas upgrade &> /dev/null
-
-  echo "Updating Npm Packages …"
-  npm update -g &> /dev/null
-
-  echo "Updating Gems …"
-  sudo gem update --system &> /dev/null
-  sudo gem update --no-verbose &> /dev/null
-  sudo gem cleanup &> /dev/null
+  for file in "${!files[@]}"; do
+    echo -e "Updating \e[33m$file\e[39m apps …"
+    ${files[$file]} &> /dev/null
+  done
 }
 
 # Shows help/usage information.
