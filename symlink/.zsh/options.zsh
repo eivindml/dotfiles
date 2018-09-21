@@ -16,7 +16,7 @@
 # Paths
 ###############################################################################
 
-# export PATH=$HOME/.composer/vendor/bin:$HOME/.gem/ruby/2.3.0/bin:$HOME/.fastlane/bin:$HOME/Documents/projects/dotfiles/bin:$PATH
+export PATH=$PATH:~/.composer/vendor/bin
 
 # Aliases
 ###############################################################################
