@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make sure the folder is root
+cd $(dirname $0)
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # TODO: Automate this. Maybe have an array with source + dest string (can assume dest string if not present)

@@ -19,133 +19,70 @@
 ##   -u      Updates all software packages on system.
 
 
-# TODO: Add nice printouts throughout, and remove unwanted printouts. Maybe just a loading spinner for each step.
-# TODO: Ask for sudo as first thing, so we don't need it later on.
-# TODO: Add nice comments
-# TODO: Remove install and run install title and commands.
-
-install_title() {
-	read -r -p "Do you want to update $1? [y/N] " response
-	if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
-	then
-		return 0
-	else
-		return 1
-	fi
-}
-
-install_commands() {
-	while read -r line
-	do
-		eval $line
-	done
-}
-
+# Installs apps (apps/),
+# system settings (macos)
+# and symlinks (symlink/).
 run_install() {
-  # TODO: Do this in a cleaner way.
-  cd apps/
-  sh _install.sh
-
-  cd ../macos/
-  sh _install.sh
-
-  cd ../symlink/
-  sh _install.sh
+  sh */_install.sh
 }
 
+# Update all apps
+# installed on the system.
 run_update() {
-  # TODO: Simplify this code
-if install_title "core macOS software"
-then
-install_commands <<EOF
-softwareupdate --list
-softwareupdate --install --all
-EOF
-fi
+  echo "Updating macOS System …"
+  softwareupdate --install --all &> /dev/null
 
-if install_title "brew packages"
-then
-install_commands <<EOF
-brew update
-brew outdated
-brew upgrade
-brew cleanup -s
-brew doctor
-brew missing
-EOF
-fi
+  echo "Updating Brew …"
+  brew update &> /dev/null
+  brew upgrade &> /dev/null
+  brew cleanup -s &> /dev/null
 
-if install_title "brew cask packages"
-then
-install_commands <<EOF
-brew cask outdated
-brew cask upgrade
-brew cleanup
-EOF
-fi
+  echo "Updating Brew Casks …"
+  brew cask upgrade &> /dev/null
+  brew cleanup &> /dev/null
 
-if install_title "App Store apps"
-then
-install_commands <<EOF
-mas outdated
-mas upgrade
-EOF
-fi
+  echo "Updating App Store …"
+  mas upgrade &> /dev/null
 
-if install_title "npm packages"
-then
-install_commands <<EOF
-npm outdated -g
-npm update -g
-EOF
-fi
+  echo "Updating Npm Packages …"
+  npm update -g &> /dev/null
 
-if install_title "gem packages"
-then
-install_commands <<EOF
-sudo gem outdated
-sudo gem update --system
-sudo gem update
-sudo gem cleanup
-EOF
-fi
+  echo "Updating Gems …"
+  sudo gem update --system &> /dev/null
+  sudo gem update &> /dev/null
+  sudo gem cleanup &> /dev/null
 }
 
-run_help() {
-  # This parses the usage description from the comment
-  # header. Parses lines starting with double hashtags.
+# Shows help/usage information.
+# This is parsed from the header,
+# using lines starting with two #'s.
+run_usage() {
   sed -n '/^##/,/^$/s/^## \{0,1\}//p' $0
 }
 
+# Ask for password up front
+# so we don't have to ask for that
+# at a later point in the execution.
+# Default timeout is 5 minutes, but is
+# extended to 20 minutes in terminal.sh.
+sudo -v
 
-# Parse command line arguments and do corresponding action.
-while getopts ":hiu" opt; do
+# Parse command line arguments
+# and do corresponding action.
+while getopts "iuh" opt; do
   case $opt in
 
-    # Help option
-    h)
-      run_help
-      ;;
-
-    # Install option
-    i)
+    i) # Install option
       run_install
       ;;
 
-    # Update option
-    u)
+    u) # Update option
       run_update
       ;;
 
-    # Invalid argument. Show help
-    \?)
-      run_help
+    h|\?) # Help or unknown argument
+      run_usage
       ;;
 
   esac
 done
-
-# No arguments specified, show help
-if (($# == 0)); then
-  run_help
-fi
