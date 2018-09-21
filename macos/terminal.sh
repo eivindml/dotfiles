@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Description:  Configures macOS Terminal defaults.
+# Author:       Eivind Mikael Lindbråten
+# Email:        eivindml@icloud.com
+# Github:       github.com/eivindml
 
 # Set default shell to fish
 chsh -s /usr/local/bin/fish

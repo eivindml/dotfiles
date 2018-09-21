@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Description:  Configures macOS defaults.
+# Author:       Eivind Mikael Lindbråten
+# Email:        eivindml@icloud.com
+# Github:       github.com/eivindml
 
 # Disable the App Store origin security
 sudo spctl --master-disable
@@ -24,4 +29,3 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
-

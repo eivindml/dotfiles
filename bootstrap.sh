@@ -23,7 +23,7 @@
 # system settings (macos)
 # and symlinks (symlink/).
 run_install() {
-  sh */_install.sh
+  bash */_install.sh
 }
 
 # Update all apps
@@ -49,7 +49,7 @@ run_update() {
 
   echo "Updating Gems …"
   sudo gem update --system &> /dev/null
-  sudo gem update &> /dev/null
+  sudo gem update --no-verbose &> /dev/null
   sudo gem cleanup &> /dev/null
 }
 

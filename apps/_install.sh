@@ -1,21 +1,50 @@
 #!/bin/bash
+#
+# Description:  Helper script to install apps
+#               to the system, using various package managers.
+# Author:       Eivind Mikael Lindbråten
+# Email:        eivindml@icloud.com
+# Github:       github.com/eivindml
 
-# Make sure the folder is root
+# Declares a dictionary containing the
+# name of the app file and the accociated
+# command needed to install apps specified the file.
+declare -A files
+files=(
+  ["Brewfile"]="brew install"
+  ["Caskfile"]="brew cask install"
+  ["Gemfile"]="sudo gem install"
+  ["Masfile"]="mas install"
+  ["Npmfile"]="npm install -g"
+)
+
+# Installs nececary dependencies for
+# running this script; Homebrew and latest
+# Bash for dictionary support.
+install_dependencies() {
+  # Install Homebrew
+  which -s brew
+  if [[ $? != 0 ]] ; then
+  	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew install bash
+  fi
+}
+
+# Installs all apps on the system.
+# It skips lines starting with a #,
+# allowing for comments in the appfiles.
+# The output from each install sequence is silenced.
+install_apps() {
+  for file in "${!files[@]}"; do
+    echo "Installing apps in $file …"
+    grep "^[^# ]" $file | xargs ${files[$file]} &> /dev/null
+  done
+}
+
+# Make sure script is run
+# with the folder containing
+# the script as the current directory.
 cd $(dirname $0)
 
-# TODO: Simplify this file so that a function does everything
-# TODO: Add comment support for all files
-# TODO: Get highlighting of files, and add icons to them
-
-# Install Homebrew
-which -s brew
-if [[ $? != 0 ]] ; then
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
-# Install brews, casks, macos apps, node packages and gems
-grep "^[^# ]" Brewfile | xargs brew install
-grep "^[^# ]" Caskfile | xargs brew cask install
-grep "^[^# ]" Masfile | xargs mas install
-grep "^[^# ]" Npmfile | xargs npm install -g
-grep "^[^# ]" Gemfile | xargs sudo gem install
+install_dependencies
+install_apps
