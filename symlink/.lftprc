@@ -1,5 +1,0 @@
-set ssl:verify-certificate no
-set ssl:check-hostname no
-set ftp:ssl-force false
-set ftp:ssl-protect-list false
-set ftp:ssl-allow false

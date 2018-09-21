@@ -1,4 +1,5 @@
 variables.yml
-flexget.log
+flexget.log*
 received/
 db-config.sqlite
+crash_report.*
