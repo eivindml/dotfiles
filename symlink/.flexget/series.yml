@@ -30,11 +30,10 @@ series:
     - The Last Man on Earth
     - Trailer Park Boys
     - Trygdekontoret
-    - Vice:
-        identified_by: ep
+    - Vice
     - Watchmen
-    - Who Is America
     - Westworld
+    - Who Is America
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
@@ -49,6 +48,7 @@ series:
     # - Downton Abbey
     # - Folkeopplysningen
     # - Fuck Thats Delicious
+    # - Game of Thrones
     # - Gaycation
     # - Genius
     # - Huangs World
@@ -68,20 +68,16 @@ series:
     # - Sherlock
     # - South Park
     # - Teenage Boss
+    # - The Handmaids Tale
     # - The Knick
     # - The Last Panthers
     # - The Office
     # - The Simpsons
     # - Trygdekontoret
+    # - Trygdekontoret Dokumentar
     # - VICE Does America
     # - Vice Essentials
     # - VICE Lab
     # - Vice On HBO
     # - Viceland
     # - Weediquette
-    # - Game of Thrones
-    # - The Handmaids Tale
-    #- Trygdekontoret Dokumentar:
-        #identified_by: id
-        #name_regexp: ^trygdekontoret.dokumentar
-        #id_regexp: .*
