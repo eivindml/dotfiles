@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Description:  Configures macOS Safari defaults.
+# Author:       Eivind Mikael Lindbråten
+# Email:        eivindml@icloud.com
+# Github:       github.com/eivindml
 
 # View full URL i status bar
 defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
