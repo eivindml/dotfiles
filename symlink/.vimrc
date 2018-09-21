@@ -1,7 +1,7 @@
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-call plug#begin('~/Documents/dotfiles/symlink/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'SirVer/ultisnips'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -80,7 +80,7 @@ let g:NERDTreeWinSize = 35
 set updatetime=5000 " Update time for vim-gitgutter in ms
 
 " UltiSnips
-let g:UltiSnipsSnippetsDir = "~/Documents/dotfiles/symlink/.vim/snippets"
+let g:UltiSnipsSnippetsDir = "~/.vim/snippets"
 
 " CtrlP
 let g:ctrlp_show_hidden = 1 " Also search hidden files
