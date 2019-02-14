@@ -7,18 +7,15 @@ series:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
     - Adventure Time
-    - Over The Garden Wall
     - Arrested Development
+    - Atlanta
     - Barry
     - Better Call Saul
-    - Brooklyn Nine Nine
-    - Cobra Kai
-    - Atlanta
     - Black Mirror
     - Bobs Burgers
+    - Brooklyn Nine Nine
+    - Cobra Kai
     - Curb Your Enthusiasm
-    - Det Kunne Vaert Verre
-    - Det Kunne Vert Verre
     - Det Kunne Vært Verre
     - Disenchantment
     - Dynasties
@@ -29,14 +26,15 @@ series:
     - Mr. Robot
     - Nathan For You
     - Norm Macdonald Has a Show
+    - Over The Garden Wall
     - Rick and Morty
     - Sick of It
     - Silicon Valley
     - Stranger Things
     - The Last Man on Earth
+    - The Last OG
     - Trailer Park Boys
     - Trygdekontoret
-    - The Last OG
     - Vice
     - Watchmen
     - Westworld
