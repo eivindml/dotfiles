@@ -1,2 +1,1 @@
-# Change default starting directory
-cd ~/Documents
+set -x PATH $HOME/.fastlane/bin $PATH

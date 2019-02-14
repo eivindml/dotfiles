@@ -22,10 +22,13 @@ osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/L
 
 # Change defalt finder window
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Documents/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Don't show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+
+# Enable fullscreen for Simulator
+defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
