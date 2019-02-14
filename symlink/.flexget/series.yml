@@ -2,7 +2,7 @@ series:
   settings:
     tv-group:
       propers: 7 days
-      quality: 720p+
+      quality: 1080p+
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
