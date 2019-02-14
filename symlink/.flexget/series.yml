@@ -7,9 +7,13 @@ series:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
     - Adventure Time
+    - Over The Garden Wall
     - Arrested Development
     - Barry
     - Better Call Saul
+    - Brooklyn Nine Nine
+    - Cobra Kai
+    - Atlanta
     - Black Mirror
     - Bobs Burgers
     - Curb Your Enthusiasm
@@ -17,6 +21,7 @@ series:
     - Det Kunne Vert Verre
     - Det Kunne Vært Verre
     - Disenchantment
+    - Dynasties
     - Flaked
     - Folkeopplysningen
     - Hamiltons Pharmacopeia
@@ -31,6 +36,7 @@ series:
     - The Last Man on Earth
     - Trailer Park Boys
     - Trygdekontoret
+    - The Last OG
     - Vice
     - Watchmen
     - Westworld
