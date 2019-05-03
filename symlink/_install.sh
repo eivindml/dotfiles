@@ -14,7 +14,6 @@ paths=(
   [".vimrc"]="$HOME/.vimrc"
   [".flexget/"]="$HOME/.flexget/"
   [".vim/"]="$HOME/.vim/"
-  ["fish/"]="$HOME/.config/fish/"
 )
 
 # Sets up symlinks, and informs
