@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for d in ~/Repositories/*; do
+  cd $d
+	if [[ -z $(git status -s) ]]
+	then
+	  echo ""
+	else
+          echo $d
+	  exit
+	fi
+done
+
