@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+console.log("Testing");
+process.argv.slice(2).forEach(function (fileName) {
+	console.log(fileName);
+ });
+
+const chalk = require('chalk');
+
+console.log(chalk.blue('Hello world!'));
