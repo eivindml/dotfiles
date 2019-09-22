@@ -10,12 +10,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Copy folder content recursively to remote
-        uses: garygrossgarten/github-action-scp@release
+#      - name: Delete folder
+#        uses: appleboy/ssh-action@master
+#        with:
+#          args: >
+#            --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
+#            --script 'rm -rf ~/dotfiles'
+      - name: Cloing repo files
+        uses: actions/checkout@v1
+      - name: Copying files til Mac Mini
+        uses: AEnterprise/rsync-deploy@v1.0
+        env:
+          DEPLOY_KEY: ${{ secrets.SSH_KEY }}
+          ARGS: "-e -c -r --delete"
+          SERVER_PORT: 22
+          FOLDER: .
+          SERVER_IP: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.SSH_USER }}
+          SERVER_DESTINATION: ~/dotfiles
+#      - name: Copy folder content recursively to remote
+#        uses: garygrossgarten/github-action-scp@release
+#        with:
+#          local: ${{ github.workspace }}/*
+#          remote: dotfiles
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.SSH_USER }}
+#          password: ${{ secrets.PASSWORD }}
+      - name: Installing dotfiles on Mac Mini
+        uses: appleboy/ssh-action@master
         with:
-          local: ${{ github.workspace }}
-          remote: dotfiles-test
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.PASSWORD }}
+          args: >
+            --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
+            --script 'cd ~/dotfiles'
+            --script 'bash bootstrap.sh -i'
