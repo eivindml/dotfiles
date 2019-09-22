@@ -23,7 +23,7 @@ jobs:
           DEPLOY_KEY: ${{ secrets.SSH_KEY }}
           ARGS: "-e -c -r --delete"
           SERVER_PORT: 22
-          FOLDER: ${{ github.workspace }}
+          FOLDER: .
           SERVER_IP: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.SSH_USER }}
           SERVER_DESTINATION: ~/dotfiles-test
