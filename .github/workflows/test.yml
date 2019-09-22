@@ -22,7 +22,7 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.SSH_KEY }}
           ARGS: "-e -c -r --delete"
-          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          SERVER_PORT: 22
           FOLDER: ${{ github.workspace }}
           SERVER_IP: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.SSH_USER }}
