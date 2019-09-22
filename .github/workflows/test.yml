@@ -15,7 +15,16 @@ jobs:
         uses: garygrossgarten/github-action-scp@release
         with:
           local: ${{ github.workspace }}
-          remote: dotfiles-test
+          remote: dotfiles
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
+      - name: Vultr remote machine
+        uses: appleboy/ssh-action@master
+        with:
+          args: >
+            --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
+            --script 'rm -rf ~/dotfiles'
+            --script 'cd ~/dotfiles'
+            --script 'bash _install.sh -i'
+            --script 'bash _install.sh -u'
