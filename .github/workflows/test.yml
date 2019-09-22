@@ -13,7 +13,7 @@ jobs:
       - name: Copy folder content recursively to remote
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: /
+          local: apps
           remote: scp/test
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
