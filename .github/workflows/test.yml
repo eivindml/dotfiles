@@ -17,14 +17,24 @@ jobs:
             --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
             --script 'rm -rf ~/dotfiles'
       - uses: actions/checkout@v1
-      - name: Copy folder content recursively to remote
-        uses: garygrossgarten/github-action-scp@release
-        with:
-          local: ${{ github.workspace }}/*
-          remote: dotfiles
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.PASSWORD }}
+      - name: deploy to server
+        uses: AEnterprise/rsync-deploy@v1.0
+        env:
+          DEPLOY_KEY: ${{ secrets.SSH_KEY }}
+          ARGS: "-e -c -r --delete"
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          FOLDER: ${{ github.workspace }}
+          SERVER_IP: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.SSH_USER }}
+          SERVER_DESTINATION: dotfiles-test
+#      - name: Copy folder content recursively to remote
+#        uses: garygrossgarten/github-action-scp@release
+#        with:
+#          local: ${{ github.workspace }}/*
+#          remote: dotfiles
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.SSH_USER }}
+#          password: ${{ secrets.PASSWORD }}
       - name: Vultr remote machine
         uses: appleboy/ssh-action@master
         with:
