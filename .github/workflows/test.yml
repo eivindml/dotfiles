@@ -1,4 +1,4 @@
-- name: Copy folder content recursively to remote!
+- name: Copy folder content recursively to remote
   uses: garygrossgarten/github-action-scp@release
   with:
     local: ./
