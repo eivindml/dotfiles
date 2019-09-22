@@ -41,5 +41,5 @@ jobs:
         with:
           args: >
             --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
-            --script 'cd ~/dotfiles'
-            --script 'bash bootstrap.sh -i'
+            --script 'cd ~/dotfiles/symlink'
+            --script 'bash _install.sh'
