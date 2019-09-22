@@ -16,8 +16,8 @@ jobs:
 #          args: >
 #            --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
 #            --script 'rm -rf ~/dotfiles'
-      - name: Cloning repo files
-      - uses: actions/checkout@v1
+      - name: Cloing repo files
+        uses: actions/checkout@v1
       - name: Copying files til Mac Mini
         uses: AEnterprise/rsync-deploy@v1.0
         env:
