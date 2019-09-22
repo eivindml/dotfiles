@@ -16,3 +16,7 @@ Options:
   -i      Install dotfiles to system.
   -u      Updates all software packages on system.
 ```
+
+## Action
+
+Added workflow action to copy dotfiles to server.
