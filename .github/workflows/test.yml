@@ -16,8 +16,9 @@ jobs:
 #          args: >
 #            --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
 #            --script 'rm -rf ~/dotfiles'
+      - name: Cloning repo files
       - uses: actions/checkout@v1
-      - name: deploy to server
+      - name: Copying files til Mac Mini
         uses: AEnterprise/rsync-deploy@v1.0
         env:
           DEPLOY_KEY: ${{ secrets.SSH_KEY }}
@@ -26,7 +27,7 @@ jobs:
           FOLDER: .
           SERVER_IP: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.SSH_USER }}
-          SERVER_DESTINATION: ~/dotfiles-test
+          SERVER_DESTINATION: ~/dotfiles
 #      - name: Copy folder content recursively to remote
 #        uses: garygrossgarten/github-action-scp@release
 #        with:
@@ -35,7 +36,7 @@ jobs:
 #          host: ${{ secrets.HOST }}
 #          username: ${{ secrets.SSH_USER }}
 #          password: ${{ secrets.PASSWORD }}
-      - name: Vultr remote machine
+      - name: Installing dotfiles on Mac Mini
         uses: appleboy/ssh-action@master
         with:
           args: >
