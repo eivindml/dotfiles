@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+       - name: Delete folder
+        uses: appleboy/ssh-action@master
+        with:
+          args: >
+            --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
+            --script 'rm -rf ~/dotfiles'
       - uses: actions/checkout@v1
       - name: Copy folder content recursively to remote
         uses: garygrossgarten/github-action-scp@release
@@ -24,7 +30,6 @@ jobs:
         with:
           args: >
             --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
-            --script 'rm -rf ~/dotfiles'
             --script 'cd ~/dotfiles'
-            --script 'bash _install.sh -i'
-            --script 'bash _install.sh -u'
+            --script 'bash bootstrap.sh -i'
+            --script 'bash bootstrap.sh -u'
