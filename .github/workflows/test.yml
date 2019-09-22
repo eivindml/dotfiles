@@ -20,7 +20,7 @@ jobs:
       - name: Copy folder content recursively to remote
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: ${{ github.workspace }}
+          local: ${{ github.workspace }}/.
           remote: dotfiles
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
@@ -32,4 +32,3 @@ jobs:
             --host ${{ secrets.HOST }} --user ${{ secrets.SSH_USER }} --password ${{ secrets.PASSWORD }}
             --script 'cd ~/dotfiles'
             --script 'bash bootstrap.sh -i'
-            --script 'bash bootstrap.sh -u'
