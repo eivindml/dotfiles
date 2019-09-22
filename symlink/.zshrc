@@ -33,13 +33,13 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 alias tmux='tmux attach || tmux'
 
-source ~/.profile
+# source ~/.profile
 #export PATH="$HOME/.fastlane/bin:$PATH"
 #export PATH="${PATH}:${HOME}/.composer/vendor/bin"
 
-if [ -f ~/.bashrc ]; then                                                            
- source ~/.bashrc                                                                
-fi 
+if [ -f ~/.bashrc ]; then
+ source ~/.bashrc
+fi
 
 set -o vi
 
