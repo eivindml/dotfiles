@@ -20,3 +20,23 @@ Options:
 ## Action
 
 Added workflow action to copy dotfiles to server.
+
+## Scripts
+
+```bash
+swift package init --type executable
+swift package generate-xcodeproj
+```
+
+Testing:
+
+```bash
+swift run
+```
+
+Intalling:
+
+```
+swift build -c release
+cp .build/release/script-name ../../bin
+```
