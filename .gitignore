@@ -1,2 +1,5 @@
-.DS_Store
-*.swp
+variables.yml
+flexget.log*
+received/
+db-config.sqlite
+crash_report.*
