@@ -1,27 +1,22 @@
 # `dotfiles`
 
-Minimalist dotfiles configuration.
+Minimalist dotfiles configuration, now using Swift scripting.
 
 ## Usage
 
 ```
-dotfiles Bootstrap.
-
-Usage:
-  ./bootstrap.h -i
-  ./bootstrap.h -u
-
-Options:
-  -h      Show this screen.
-  -i      Install dotfiles to system.
-  -u      Updates all software packages on system.
+./bootstrap
 ```
+
+⚠️ Warning, this will find all dotfiles and folders in your dotfiles directory, and delete the corresponding ones from your home directory, and then symlink them back.
 
 ## Action
 
 Added workflow action to copy dotfiles to server.
 
 ## Scripts
+
+Cheat sheet.
 
 ```bash
 swift package init --type executable
