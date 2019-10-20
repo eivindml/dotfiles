@@ -1,6 +1,6 @@
-#alias tmux='tmux attach || tmux'
 alias ls='ls -G'
 
+export LC_ALL=en_US.UTF-8
 export PATH="$PATH:$HOME/Developer/dotfiles/bin"
 
 if [[ -n $SSH_CONNECTION ]]; then
@@ -8,4 +8,3 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export PS1="%1d  "
 fi
-#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
