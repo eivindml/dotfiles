@@ -12,5 +12,5 @@ else
 fi
 
 # Environment variables
-# source ~/.zsh_env_vars
+source ~/.zsh_env_vars
 
