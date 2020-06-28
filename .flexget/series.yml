@@ -6,7 +6,7 @@ series:
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
-    - Adventure Time
+    - Adventure Time Distant Lands
     - Arrested Development
     - Atlanta
     - Barry
