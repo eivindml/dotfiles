@@ -12,24 +12,6 @@ templates:
       password: '{? transmission.password ?}'
 
 tasks:
-  movies:
-    inputs: 
-      - rss: http://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=bb
-      - rss: https://rarbg.to/rssdd.php?category=44;45
-    proper_movies: yes
-    seen_movies: loose
-    list_match:
-      from:
-        - movie_list: movies
-    quality: 720p+ webrip+
-    imdb_lookup: yes
-    transmission:
-      enabled: yes
-      host: localhost
-      port: 9091
-      username: '{? transmission.username ?}'
-      password: '{? transmission.password ?}'
-      path: /Volumes/Movies
       
   iptorrents:
     priority: 1
