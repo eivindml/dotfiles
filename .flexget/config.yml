@@ -30,24 +30,30 @@ tasks:
       username: '{? transmission.username ?}'
       password: '{? transmission.password ?}'
       path: /Volumes/Movies
+      
+  iptorrents:
+    priority: 1
+    rss: https://iptorrents.com/t.rss?u={? iptorrents.id ?};tp={? iptorrents.tp ?};48;7;20;38;100;89;101;68;62;6;90;77;96;87;54;22;99;4;5;78;66;79;65;55;23;25;26;82;24;83;download
+    template: tv-template
+    private_torrents: yes
 
   showrss.info:
-    priority: 1
+    priority: 2
     rss: http://showrss.info/user/{? showrss.id ?}.rss?magnets=true&namespaces=false&name=null&quality=anyhd&re=null
     template: tv-template
 
   rarbg:
-    priority: 2
+    priority: 3
     rss: https://rarbg.to/rssdd.php?category=1;18;41;49
     template: tv-template
 
   zooqle:
-    priority: 3
+    priority: 4
     rss: https://zooqle.com/search?q=%2A&fmt=rss
     template: tv-template
 
   norbits.net:
-    priority: 4
+    priority: 5
     rss: http://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=bb
     template: tv-template
     private_torrents: yes
