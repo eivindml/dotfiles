@@ -24,3 +24,4 @@ tasks:
     rss: http://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=bb
     template: tv-template
     private_torrents: yes
+
