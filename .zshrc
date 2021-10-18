@@ -3,6 +3,9 @@ alias ls='ls -AG'
 alias tower='gittower'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 
+alias yarn-linked='find -L $(find node_modules -type l) -type d -prune'
+alias yarn-links='(cd $HOME/.config/yarn/link && find . -type l | cut -c 3-)'
+
 export LC_ALL=en_US.UTF-8
 export PATH="$PATH:$HOME/Developer/dotfiles/bin"
 export PATH=/Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon:$PATH
