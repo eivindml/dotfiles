@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 echo "------" >> /Users/eivindml/Library/Logs/transmission.log
 date >> /Users/eivindml/Library/Logs/transmission.log 
