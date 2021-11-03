@@ -4,7 +4,7 @@ alias ls='ls -AG'
 # alias yarn-links='(cd $HOME/.config/yarn/link && find . -type l | cut -c 3-)'
 
 export LC_ALL=en_US.UTF-8
-export PATH="$PATH:$HOME/Developer/dotfiles/bin"
+export PATH="$PATH:$HOME/Developer/dotfiles/bin:$HOME/bin"
 
 export PROMPT="%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}%B]%b%F{black}$ "
 
@@ -15,7 +15,7 @@ export PROMPT="%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}
 # fi
 
 # Environment variables
-# source ~/.zsh_env_vars
+source ~/.zsh_env_vars
 
 init-script() {
   if [ ! $1 ]; then
