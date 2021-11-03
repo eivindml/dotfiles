@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 # Check argument that it is a valid directory
 [[ -z "$1" || ! -d "$(pwd)/$1" ]] && echo "Not a directory. Please pass in directory name as first argument. 😊" && exit 1

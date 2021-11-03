@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 # Loop over hidden files (first char is dot, but not second)
 for FILE in .[!.]*; do

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 # Handle absolute or relative path
 DELETE_FILE="$(pwd)/$1" && [[ "$1" =~ "^/" ]] && DELETE_FILE="$1" 
