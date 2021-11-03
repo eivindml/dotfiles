@@ -1,18 +1,18 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Check argument that it is a valid directory
 [[ -z $1 || ! -d "$(pwd)/$1" ]] && echo "Not a directory. Please pass in directory name as first argument. 😊" && exit 1
 
-CURRENT_DIR=$(pwd);
+CURRENT_DIR=$PWD;
 DIR_NAME=$1;
 
 # Confirm archival
-read -p "Are you sure you want to archive $(pwd)/$_DIR_NAME (yes/no)? "
-[[ ! $REPLY =~ ^[yes|YES|y|Y] ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
+echo -n "Are you sure you want to archive $CURRENT_DIR/$DIR_NAME (yes/no)? " && read REPLY
+[[ ! $REPLY =~ "^[yes|y]$" ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
 
 # Check git status, and commit/push things
 cd $DIR_NAME
-[ ! -z "$(git status --porcelain)" ] && echo "Uncomitted stuff" && exit 1
+[ ! -z "$(git status --porcelain)" ] && echo "You have uncomitted changes. Please commit them first! 🥰" && exit 1
 
 # Delete node_modules and other process files
 
