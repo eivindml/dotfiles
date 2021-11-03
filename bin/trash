@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+# Check argument that it is a valid directory
+[[ -z $1 || ! -e "$(pwd)/$1" ]] && echo "File/directory does not exist. 😊" && exit 1
+
+echo "$(pwd)/$1 sent to Trash 🗑"
+
+osascript -e "tell application \"Finder\" to delete POSIX file \"$(pwd)/$1\"" &>/dev/null

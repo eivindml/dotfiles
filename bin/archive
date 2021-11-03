@@ -1,31 +1,29 @@
 #!/bin/zsh
 
-echo $(whoami)
-
 # Check argument that it is a valid directory
-[[ -z $1 || ! -d "$(pwd)/$1" ]] && echo "Not a directory. Please pass in directory name as first argument. 😊" && exit 1
+[[ -z "$1" || ! -d "$(pwd)/$1" ]] && echo "Not a directory. Please pass in directory name as first argument. 😊" && exit 1
 
 CURRENT_DIR=$PWD;
 DIR_NAME=$1;
 
 # Confirm archival
 echo -n "Are you sure you want to archive $CURRENT_DIR/$DIR_NAME (yes/no)? " && read REPLY
-[[ ! $REPLY =~ "^[yes|y]$" ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
+[[ ! "$REPLY" =~ "^[yes|y]$" ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
 
 # Check for uncomitted changes
-cd $DIR_NAME
+cd "$DIR_NAME"
 [ ! -z "$(git status --porcelain)" ] && echo "You have uncomitted changes. Please commit them first! 🥰" && exit 1
 
 # Check if project is different from upstream
 echo "We will now fetch origin, and check if there is a difference." && [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ] && echo "You have unsynced changes. Please pull/push them first!" && exit 1
 
-echo "Everything is synced! 🥳"
+echo "Everything is synced!"
 
 # Delete node_modules and other process files
-[ -d $CURRENT_DIR/$DIR_NAME/node_modules ] && echo "Deleting $CURRENT_DIR/$DIR_NAME/node_modules ... 🗑" && rm -rf $CURRENT_DIR/$DIR_NAME/node_modules
+[ -d "$CURRENT_DIR/$DIR_NAME/node_modules" ] && echo "Deleting $CURRENT_DIR/$DIR_NAME/node_modules ... 🗑" && rm -rf "$CURRENT_DIR/$DIR_NAME/node_modules"
 
 # Make zip and copy to Documents
-# zip -r "/Users/eivindml/Documents/$DIR_NAME-dev.zip" $DIR_NAME;
+echo "Now we will create archive the project to $HOME/Documents/$DIR_NAME-dev.zip" &$ zip -r "$HOME/Documents/$DIR_NAME-dev.zip" "$DIR_NAME";
 
 # Delete project folder
-
+echo "All done! 🥳 Now deleting project ..." && trash "$CURRENT_DIR/$DIR_NAME"
