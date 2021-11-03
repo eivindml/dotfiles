@@ -17,7 +17,10 @@ cd $DIR_NAME
 # Check if project is different from upstream
 echo "We will now fetch origin, and check if there is a difference." && [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ] && echo "You have unsynced changes. Please pull/push them first!" && exit 1
 
+echo "Everything is synced! 🥳"
+
 # Delete node_modules and other process files
+[ -d $CURRENT_DIR/$DIR_NAME/node_modules ] && echo "Deleting $CURRENT_DIR/$DIR_NAME/node_modules ... 🗑"
 
 # Make zip and copy to Documents
 # zip -r "/Users/eivindml/Documents/$DIR_NAME-dev.zip" $DIR_NAME;
