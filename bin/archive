@@ -10,9 +10,12 @@ DIR_NAME=$1;
 echo -n "Are you sure you want to archive $CURRENT_DIR/$DIR_NAME (yes/no)? " && read REPLY
 [[ ! $REPLY =~ "^[yes|y]$" ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
 
-# Check git status, and commit/push things
+# Check for uncomitted changes
 cd $DIR_NAME
 [ ! -z "$(git status --porcelain)" ] && echo "You have uncomitted changes. Please commit them first! 🥰" && exit 1
+
+# Check if project is different from upstream
+echo "We will fetch origin, and check if there is a difference. ⚖️" && [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ] && echo "You have unsynced changes. Please pull/push them first! 🥰" && exit 1
 
 # Delete node_modules and other process files
 
