@@ -26,4 +26,4 @@ echo "Everything is synced!"
 echo "Now we will create archive the project to $HOME/Documents/$DIR_NAME-dev.zip" &$ zip -r "$HOME/Documents/$DIR_NAME-dev.zip" "$DIR_NAME";
 
 # Delete project folder
-echo "All done! 🥳 Now deleting project ..." && trash "$CURRENT_DIR/$DIR_NAME"
+echo "All done! 🥳 Moving $DIR_NAME to Trash ..." && trash "$CURRENT_DIR/$DIR_NAME"
