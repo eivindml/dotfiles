@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Check argument that it is a valid directory
+[[ -z $1 || ! -d "$(pwd)/$1" ]] && echo "Not a directory. Please pass in directory name as first argument. 😊" && exit 1
+
+CURRENT_DIR=$(pwd);
+DIR_NAME=$1;
+
+# Confirm archival
+read -p "Are you sure you want to archive $(pwd)/$_DIR_NAME (yes/no)? "
+[[ ! $REPLY =~ ^[yes|YES|y|Y] ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
+
+# Check git status, and commit/push things
+cd $DIR_NAME
+[ ! -z "$(git status --porcelain)" ] && echo "Uncomitted stuff" && exit 1
+
+# Delete node_modules and other process files
+
+# Make zip and copy to Documents
+# zip -r "/Users/eivindml/Documents/$DIR_NAME-dev.zip" $DIR_NAME;
+
+# Delete project folder
+
