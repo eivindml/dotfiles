@@ -1,23 +1,21 @@
 # Aliases
 alias ls='ls -AG'
-alias tower='gittower'
-alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
-
-alias yarn-linked='find -L $(find node_modules -type l) -type d -prune'
-alias yarn-links='(cd $HOME/.config/yarn/link && find . -type l | cut -c 3-)'
+# alias yarn-linked='find -L $(find node_modules -type l) -type d -prune'
+# alias yarn-links='(cd $HOME/.config/yarn/link && find . -type l | cut -c 3-)'
 
 export LC_ALL=en_US.UTF-8
 export PATH="$PATH:$HOME/Developer/dotfiles/bin"
-export PATH=/Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon:$PATH
 
-if [[ -n $SSH_CONNECTION ]]; then
-  export PS1="%1d (SSH)  "
-else
-  export PS1="%1d  "
-fi
+export PROMPT="%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}%B]%b%F{black}$ "
+
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export PROMPT="%F{red}[%F{yellow}%n%F{green}@%F{cyan}%M{SSH} %F{magenta}%~%F{red}]%F{black}$ "
+# else
+#   export PROMPT="%F{red}[%F{yellow}%n%F{green}@%F{cyan}%M %F{magenta}%~%F{red}]%F{black}$ "
+# fi
 
 # Environment variables
-source ~/.zsh_env_vars
+# source ~/.zsh_env_vars
 
 init-script() {
   if [ ! $1 ]; then
@@ -38,4 +36,3 @@ function metatags() {
 function linktags() {
   curl --compressed -s $1 | xml2 | grep link | awk -F/ '{print $NF}'
 }
-export PATH="/usr/local/opt/node@14/bin:$PATH"
