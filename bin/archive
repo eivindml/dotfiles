@@ -20,7 +20,7 @@ echo "We will now fetch origin, and check if there is a difference." && [ $(git 
 echo "Everything is synced! 🥳"
 
 # Delete node_modules and other process files
-[ -d $CURRENT_DIR/$DIR_NAME/node_modules ] && echo "Deleting $CURRENT_DIR/$DIR_NAME/node_modules ... 🗑" && $CURRENT_DIR/$DIR_NAME/node_modules
+[ -d $CURRENT_DIR/$DIR_NAME/node_modules ] && echo "Deleting ./$DIR_NAME/node_modules ... 🗑" && ./$DIR_NAME/node_modules
 
 # Make zip and copy to Documents
 # zip -r "/Users/eivindml/Documents/$DIR_NAME-dev.zip" $DIR_NAME;
