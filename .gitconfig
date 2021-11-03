@@ -2,15 +2,5 @@
 	name = Eivind Lindbråten
 	email = eivindml@icloud.com
 
-; include for all repositories inside /path/to/group
-; [includeIf "gitdir:~/github/orphanagework/"]
-;  path = ~/everything/dotfiles/git/mark@orphanage.work
-
-
-;[includeIf "gitdir:~/Developer/oneweb-maps"]
-;;	path = ~/.gitconfig-solvr
-[init]
-	defaultBranch = main
-
 [diff]
     tool = ksdiff
