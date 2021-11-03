@@ -4,6 +4,7 @@
 for FILE in .[!.]*; do
 	# Skip .git folder
 	[ $FILE = ".git" ] && continue
+	[ $FILE = ".gitignore" ] && continue
 	
 	echo -n "Should we symlink $PWD/$FILE to $HOME/$FILE? (yes/no) " && read SYMLINK_PROMPT
 	

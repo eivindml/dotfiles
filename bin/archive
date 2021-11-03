@@ -19,11 +19,17 @@ echo "We will now fetch origin, and check if there is a difference." && [ $(git 
 
 echo "Everything is synced!"
 
+
 # Delete node_modules and other process files
-[ -d "$CURRENT_DIR/$DIR_NAME/node_modules" ] && echo "Deleting $CURRENT_DIR/$DIR_NAME/node_modules ... 🗑" && rm -rf "$CURRENT_DIR/$DIR_NAME/node_modules"
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/node_modules ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name 'node_modules' -type d -prune -exec rm -rf '{}' +
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/.next ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name '.next' -type d -prune -exec rm -rf '{}' +
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/.cache ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name '.cache' -type d -prune -exec rm -rf '{}' +
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/.build ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name '.build' -type d -prune -exec rm -rf '{}' +
+
+
 
 # Make zip and copy to Documents
-echo "Now we will create archive the project to $HOME/Documents/$DIR_NAME-dev.zip" &$ zip -r "$HOME/Documents/$DIR_NAME-dev.zip" "$DIR_NAME";
+echo "Now we will create archive the project to $HOME/Documents/$DIR_NAME-dev.zip" && zip -r "$HOME/Documents/$DIR_NAME-dev.zip" $CURRENT_DIR/"$DIR_NAME";
 
 # Delete project folder
 echo "All done! 🥳 Moving $DIR_NAME to Trash ..." && trash "$CURRENT_DIR/$DIR_NAME"
