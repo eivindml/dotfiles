@@ -1,6 +1,9 @@
 [user]
-	name = Eivind Lindbråten
-	email = eivindml@icloud.com
+  name = Eivind Lindbråten
+  email = eivindml@icloud.com
 
 [diff]
-    tool = ksdiff
+  tool = ksdiff
+
+[init]
+  defaultBranch = main
