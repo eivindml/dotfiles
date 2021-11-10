@@ -1,1 +1,6 @@
 .DS_Store
+.flexget/variables.yml
+.flexget/*.log*
+.flexget/db-config.sqlite
+.flexget/.config-lock
+.flexget/received/

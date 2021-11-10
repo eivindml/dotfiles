@@ -21,8 +21,14 @@ tasks:
 
   norbits.net:
     priority: 2
+<<<<<<< HEAD
     rss: https://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=no&cats=2,0,0,0
     template: tv-template
     private_torrents: yes
     verify_ssl_certificates: no
+=======
+    rss: http://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=bb
+    template: tv-template
+    private_torrents: yes
+>>>>>>> abe2aeddbb4567f2d513fc05b4092cefeaf739e7
 
