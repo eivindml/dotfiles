@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dscl . -read /Users/${USER} JPEGPhoto | tail -1 | xxd -r -p > ${HOME}/Desktop/accountImage.jpg

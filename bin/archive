@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# Check argument that it is a valid directory
+[[ -z "$1" || ! -d "$(pwd)/$1" ]] && echo "Not a directory. Please pass in directory name as first argument. 😊" && exit 1
+
+CURRENT_DIR=$PWD;
+DIR_NAME=$1;
+
+# Confirm archival
+echo -n "Are you sure you want to archive $CURRENT_DIR/$DIR_NAME (yes/no)? " && read REPLY
+[[ ! "$REPLY" =~ "^[yes|y]$" ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
+
+# Check for uncomitted changes
+cd "$DIR_NAME"
+[ ! -z "$(git status --porcelain)" ] && echo "You have uncomitted changes. Please commit them first! 🥰" && exit 1
+
+# Check if project is different from upstream
+echo "We will now fetch origin, and check if there is a difference." && [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ] && echo "You have unsynced changes. Please pull/push them first!" && exit 1
+
+echo "Everything is synced!"
+
+
+# Delete node_modules and other process files
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/node_modules ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name 'node_modules' -type d -prune -exec rm -rf '{}' +
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/.next ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name '.next' -type d -prune -exec rm -rf '{}' +
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/.cache ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name '.cache' -type d -prune -exec rm -rf '{}' +
+echo "Deleting $CURRENT_DIR/$DIR_NAME/**/.build ... 🗑" && find $CURRENT_DIR/$DIR_NAME -name '.build' -type d -prune -exec rm -rf '{}' +
+
+
+
+# Make zip and copy to Documents
+echo "Now we will create archive the project to $HOME/Documents/$DIR_NAME-dev.zip" && zip -r "$HOME/Documents/$DIR_NAME-dev.zip" $CURRENT_DIR/"$DIR_NAME";
+
+# Delete project folder
+echo "All done! 🥳 Moving $DIR_NAME to Trash ..." && trash "$CURRENT_DIR/$DIR_NAME"

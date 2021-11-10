@@ -1,7 +1,1 @@
-variables.yml
-flexget.log*
-received/
-db-config.sqlite
-crash_report.*
 .DS_Store
-.config-lock
