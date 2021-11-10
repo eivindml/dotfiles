@@ -44,12 +44,15 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 
 export LC_ALL=en_US.UTF-8
-export PATH="$PATH:$HOME/Developer/dotfiles/bin:$HOME/bin"
+
+[ -d "$HOME/Developer/dotfiles/bin" ] && export PATH="$PATH:$HOME/Developer/dotfiles/bin"
+[ -d "$HOME/.bin" ] && export PATH="$PATH:$HOME/.bin"
+[ -d "/opt/homebrew/bin" ] && export PATH=/opt/homebrew/bin:$PATH
 
 # Auto cd
 setopt autocd
 
-export PROMPT="%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}%B]%b%F{black}$ "
+export PROMPT="%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}%B]%b%F{cyan}$ "
 
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export PROMPT="%F{red}[%F{yellow}%n%F{green}@%F{cyan}%M{SSH} %F{magenta}%~%F{red}]%F{black}$ "
@@ -87,3 +90,4 @@ bindkey '^e' edit-command-line
 
 # Load syntax highlighting; should be last.
 source "$HOME/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2>/dev/null
+source "$HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" 2>/dev/null

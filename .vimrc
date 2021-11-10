@@ -13,10 +13,20 @@ inoremap jj <Esc>
 syntax on
 filetype plugin on
 set fillchars=""
-set textwidth=79
+"set textwidth=79
 set nowrap
 set number relativenumber
 highlight LineNr ctermfg=grey
+set expandtab
+set shiftwidth=2
+" set autoindent
+" set smartindent
+set tabstop=2     " - tabs are at proper location
+set expandtab     " - don't use actual tab character (ctrl-v)
+set shiftwidth=2  " - indenting is 4 spaces
+set autoindent    " - turns it on
+set smartindent   " - does the right thing (mostly) in programs
+set cindent       " - stricter rules for C programs
 
 "Mode Settings
 
@@ -54,3 +64,9 @@ augroup END
 set ttimeout
 set ttimeoutlen=1
 set ttyfast
+
+" Use system clipboard
+set clipboard=unnamed
+
+" Ctrl + Enter = newline, when not in insert mode
+nmap <c-cr> i<cr><Esc>

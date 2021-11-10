@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[[ ! -f ~/Developer/dotfiles/scripts/get-link-to-selected-mail.scpt ]] && echo "Script not found ..." && exit 1
+
+osascript ~/Developer/dotfiles/scripts/get-link-to-selected-mail.scpt
