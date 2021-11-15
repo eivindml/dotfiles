@@ -1,4 +1,5 @@
 #!/bin/zsh
+HOME="/Users/eivindml"
 echo "------" >> $HOME/Library/Logs/transmission.log
 date >> $HOME/Library/Logs/transmission.log 
 echo "$TR_TORRENT_DIR" >> $HOME/Library/Logs/transmission.log
