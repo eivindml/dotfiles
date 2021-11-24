@@ -18,8 +18,8 @@ series:
     - Dark
     - Det Kunne Vært Verre
     - Dips
-    - Dopesick
     - Disenchantment
+    - Dopesick
     - Dynasties
     - Everythings Gonna Be Okay
     - Exit
@@ -40,8 +40,11 @@ series:
     - Mr. Mayor
     - Mr. Robot
     - Nathan For You
+<<<<<<< HEAD
     - Norm Macdonald Has a Show
     - Nissene i Bingen
+=======
+>>>>>>> 616b0434c66edb4c3af00b31c34fd9ffff19ec5b
     - Our Planet
     - Over The Garden Wall
     - Pørni
@@ -57,10 +60,10 @@ series:
     - Team Ingebrigtsen
     - Ted Lasso
     - The Boondocks
-    - The Great North
     - The Last Man on Earth
     - The Last OG
     - The Queens Gambit
+    - The Wheel of Time
     - Trailer Park Boys
     - Trygdekontoret
     - Trygdekontoret Dokumentar
@@ -68,8 +71,9 @@ series:
     - VICE Investigates
     - Watchmen
     - Westworld
-    - Wheel of Time
     - Who Is America
+    # - Norm Macdonald Has a Show
+    # - The Great North
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
