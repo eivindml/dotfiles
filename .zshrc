@@ -6,8 +6,8 @@ alias ls='ls -AG'
 autoload -U colors && colors	# Load colors
 
 # History in cache directory:
-HISTSIZE=10000000
-SAVEHIST=10000000
+HISTSIZE=100000000
+SAVEHIST=100000000
 HISTFILE=~/.cache/zsh/history
 
 # Load aliases and shortcuts if existent.
@@ -24,6 +24,7 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 export KEYTIMEOUT=1
 
 # Change cursor shape for different vi modes.

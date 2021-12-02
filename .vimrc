@@ -70,3 +70,9 @@ set clipboard=unnamed
 
 " Ctrl + Enter = newline, when not in insert mode
 nmap <c-cr> i<cr><Esc>
+
+" Plugins handled by vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'lervag/vimtex'
+" Initialize plugin system
+call plug#end()
