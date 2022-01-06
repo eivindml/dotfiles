@@ -6,14 +6,12 @@ series:
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
-    - Adventure Time Distant Lands
     - Arrested Development
     - Barry
+    - Beforeigners
     - Better Call Saul
     - Black Mirror
     - Bobs Burgers
-    - Beforeigners
-    - Central Park
     - College Behind Bars
     - Curb Your Enthusiasm
     - Dark
@@ -29,7 +27,6 @@ series:
     - Hacks
     - Hamiltons Pharmacopeia
     - High Maintenance
-    - History of Swear Words
     - How to With John Wilson
     - Jul i Blodfjell
     - Kompani Lauritzen
@@ -42,17 +39,14 @@ series:
     - Mr. Robot
     - Nathan For You
     - Nissene i Bingen
-    - Norm Macdonald Has a Show
     - Our Planet
     - Over The Garden Wall
     - Pørni
     - Reservation Dogs
-    - Resident Alien
     - Rick and Morty
     - Rutherford Falls
     - Search Party
     - Sick of It
-    - Silicon Valley
     - Space Force
     - Stranger Things
     - Team Ingebrigtsen
@@ -70,11 +64,10 @@ series:
     - Watchmen
     - Westworld
     - Who Is America
-    # - Norm Macdonald Has a Show
-    # - The Great North
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
+    # - Adventure Time Distant Lands
     # - Balls Deep
     # - Black Market
     # - Black Market Dispatches
@@ -82,6 +75,7 @@ series:
     # - Bravest Warriors
     # - Breaking Bad
     # - Brooklyn Nine Nine
+    # - Central Park
     # - Chelsea
     # - Cobra Kai
     # - Cyberwar
@@ -91,6 +85,7 @@ series:
     # - Game of Thrones
     # - Gaycation
     # - Genius
+    # - History of Swear Words
     # - Huangs World
     # - Indian Summers
     # - Louis Theroux Dark States
@@ -98,23 +93,27 @@ series:
     # - MythBusters
     # - Narcos
     # - Noisey
+    # - Norm Macdonald Has a Show
     # - Planet Earth
     # - Planet Earth 2
     # - Planet Earth II
     # - Planet Earth Two
     # - Prison Break
+    # - Resident Alien
     # - Saturday Night Live
     # - Sherlock
+    # - Silicon Valley
     # - South Park
     # - Teenage Boss
+    # - The Great North
     # - The Handmaids Tale
     # - The Knick
     # - The Last Panthers
     # - The Office
     # - The Simpsons
     # - VICE Does America
-    # - VICE Lab
     # - VICE Essentials
+    # - VICE Lab
     # - VICE On HBO
     # - Viceland
     # - Weediquette
