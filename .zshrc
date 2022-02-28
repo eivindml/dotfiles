@@ -53,12 +53,32 @@ export LC_ALL=en_US.UTF-8
 # Auto cd
 setopt autocd
 
-export PROMPT="%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}%B]%b%F{cyan}$ "
+# PROMPT
+# vcs_info needs to be marked for autoloading first, so you'd
+# do this somewhere in your setup:
+autoload -Uz vcs_info
+
+# Also known as the Quick-Start-Way. Probably the simplest way to add
+# vcs_info functionality to existing setups. You just drop a vcs_info call
+# to your `precmd' (or into a `precmd_functions[]' entry) and include a
+# single-quoted ${vcs_info_msg_0_} in your PS1 definition:
+precmd() { 
+  vcs_info 
+}
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '⎇ %F{yellow}%b'
+
+# This needs prompt_subst set, hence the name. So:
+setopt PROMPT_SUBST
+
+PROMPT='%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}%B]%b%F{red} ${vcs_info_msg_0_}%F{cyan}
+$ '
 
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export PROMPT="%F{red}[%F{yellow}%n%F{green}@%F{cyan}%M{SSH} %F{magenta}%~%F{red}]%F{black}$ "
 # else
-#   export PROMPT="%F{red}[%F{yellow}%n%F{green}@%F{cyan}%M %F{magenta}%~%F{red}]%F{black}$ "
+#   export PROMPT="%F{red}[%F{yellow}%n%F{green}@%F{cyan}%M %F{magenta}%~%F{red}]%F{black}$\n$ "
 # fi
 
 # Environment variables
@@ -92,3 +112,6 @@ bindkey '^e' edit-command-line
 # Load syntax highlighting; should be last.
 source "$HOME/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2>/dev/null
 source "$HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" 2>/dev/null
+
+export PNPM_HOME="/Users/eivindml/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
