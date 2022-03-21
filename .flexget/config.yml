@@ -8,20 +8,20 @@ templates:
       enabled: yes
       host: localhost
       port: 9091
-      username: '{? transmission.username ?}'
-      password: '{? transmission.password ?}'
+      username: "'{? transmission.username ?}'"
+      password: "'{? transmission.password ?}'"
 
 tasks:
       
   iptorrents:
     priority: 1
-    rss: https://iptorrents.com/t.rss?u={? iptorrents.id ?};tp={? iptorrents.tp ?};48;7;20;38;100;89;101;68;62;6;90;77;96;87;54;22;99;4;5;78;66;79;65;55;23;25;26;82;24;83;download
+    rss: "'https://iptorrents.com/t.rss?u={? iptorrents.id ?};tp={? iptorrents.tp ?};48;7;20;38;100;89;101;68;62;6;90;77;96;87;54;22;99;4;5;78;66;79;65;55;23;25;26;82;24;83;download'"
     template: tv-template
     private_torrents: yes
 
   norbits.net:
     priority: 2
-    rss: https://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=no&cats=2,0,0,0
+    rss: "'https://norbits.net/rss.php?feed=dl&passkey={? norbits.passkey ?}&format=no&cats=2,0,0,0'"
     template: tv-template
     private_torrents: yes
     verify_ssl_certificates: no
