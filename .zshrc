@@ -2,6 +2,7 @@
 alias ls='ls -AG'
 # alias yarn-linked='find -L $(find node_modules -type l) -type d -prune'
 # alias yarn-links='(cd $HOME/.config/yarn/link && find . -type l | cut -c 3-)'
+alias used_ports='sudo lsof -nP -i4TCP:3000 | grep LISTEN'
 
 autoload -U colors && colors	# Load colors
 
@@ -115,3 +116,21 @@ source "$HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" 2
 
 export PNPM_HOME="/Users/eivindml/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+
+# Pretty print of code
+#alias prettyjson='python3 -m json.tool | bat'
+prettyjson() {
+    python3 -m json.tool "$1" | /opt/homebrew/bin/bat --theme="GitHub" -p
+}
+alias dat='bat --theme="GitHub" -p'
+
+# navigation aliases
+alias dev="cd ~/Developer/"
+
+# Suffix Aliases
+alias -s json=nova
+
+whitebg() {
+  convert "$1" -background white -alpha remove -alpha off "$1"
+}
