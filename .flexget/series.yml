@@ -6,6 +6,7 @@ series:
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
+    - 90 Day Fiance
     - Arrested Development
     - Barry
     - Beforeigners
