@@ -17,6 +17,7 @@
 [alias]
   add-commit = !git add -A && git commit
   ac = !git add -A && git commit -m
+	conflicts = diff --name-only --diff-filter=U
 
 [merge]
   tool = ksdiff
@@ -36,3 +37,5 @@
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
+[rerere]
+	enabled = 1

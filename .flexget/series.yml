@@ -6,6 +6,7 @@ series:
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
+    - 90 Day Fiance
     - Arrested Development
     - Barry
     - Beforeigners
@@ -66,6 +67,7 @@ series:
     - Watchmen
     - Westworld
     - Who Is America
+    - Queen of Versailles Reigns Again
     # - 20 Aar Med Espen Eckbo
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
