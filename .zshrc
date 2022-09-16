@@ -137,3 +137,11 @@ whitebg() {
 }
 
 export PATH=/Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon:$PATH
+
+
+
+
+#### capture-website https://kalit.no --output=kalit-desktop.png --full-page --overwrite --delay=7 --launch-options='{"headless": false}' --emulate-device="iPhone X"
+#### ffmpeg -ss 00:00:00 -i output.mp4 -to 00:00:44.68 -c:v copy -c:a copy output10.mp4
+#### ffmpeg -i test.mp4 -vf blackdetect=d=0:pix_th=0.4 -f rawvideo -y /dev/null
+#### ffmpeg -f lavfi -i color=s=1920x1080 -loop 1 -t 10 -i "kalit-desktop.png" -filter_complex "[0:v]overlay=y=-'t*h*0.02'" output.mp4

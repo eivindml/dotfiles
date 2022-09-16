@@ -6,7 +6,6 @@ series:
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
-    - 90 Day Fiance
     - Arrested Development
     - Barry
     - Beforeigners
@@ -20,7 +19,6 @@ series:
     - Dips
     - Disenchantment
     - Dopesick
-    - Dynasties
     - Everythings Gonna Be Okay
     - Exit
     - Flaked
@@ -28,24 +26,23 @@ series:
     - Hacks
     - Hamiltons Pharmacopeia
     - High Maintenance
-    - How to With John Wilson
     - House of the Dragon
+    - How to With John Wilson
     - Jul i Blodfjell
     - Kasko
     - Kompani Lauritzen
     - Kongen Befaler
-    - The Lord of the Rings
     - Louis Theroux
     - Med Monsen Paa Villspor
     - Middleditch And Schwartz
     - Modern Love
-    - Mr. Mayor
     - Mr. Robot
     - Nathan For You
     - Nissene i Bingen
     - Our Planet
     - Over The Garden Wall
     - Poerni
+    - Queen of Versailles Reigns Again
     - Reservation Dogs
     - Rick and Morty
     - Rutherford Falls
@@ -60,6 +57,7 @@ series:
     - The Green Planet
     - The Last Man on Earth
     - The Last OG
+    - The Lord of the Rings
     - The Queens Gambit
     - The Wheel of Time
     - Trailer Park Boys
@@ -69,8 +67,8 @@ series:
     - Wednesday
     - Westworld
     - Who Is America
-    - Queen of Versailles Reigns Again
     # - 20 Aar Med Espen Eckbo
+    # - 90 Day Fiance
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
     # - Adventure Time Distant Lands
@@ -86,6 +84,7 @@ series:
     # - Cobra Kai
     # - Cyberwar
     # - Downton Abbey
+    # - Dynasties
     # - Folkeopplysningen
     # - Fuck Thats Delicious
     # - Game of Thrones
@@ -96,6 +95,7 @@ series:
     # - Indian Summers
     # - Louis Theroux Dark States
     # - Modern Family
+    # - Mr. Mayor
     # - MythBusters
     # - Narcos
     # - Noisey
