@@ -145,3 +145,21 @@ export PATH=/Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon:$
 #### ffmpeg -ss 00:00:00 -i output.mp4 -to 00:00:44.68 -c:v copy -c:a copy output10.mp4
 #### ffmpeg -i test.mp4 -vf blackdetect=d=0:pix_th=0.4 -f rawvideo -y /dev/null
 #### ffmpeg -f lavfi -i color=s=1920x1080 -loop 1 -t 10 -i "kalit-desktop.png" -filter_complex "[0:v]overlay=y=-'t*h*0.02'" output.mp4
+#
+#
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+
+
+
+
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH="/Users/eivindml/.local/bin:$PATH"
