@@ -26,3 +26,7 @@ tasks:
     private_torrents: yes
     verify_ssl_certificates: no
 
+  rarbg:
+    priority: 3
+    rss: "https://rarbg.to/rssdd.php?category=41"
+    template: tv-template
