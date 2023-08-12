@@ -7,8 +7,8 @@ CURRENT_DIR=$PWD;
 DIR_NAME=$1;
 
 # Confirm archival
-echo -n "Are you sure you want to archive $CURRENT_DIR/$DIR_NAME (yes/no)? " && read REPLY
-[[ ! "$REPLY" =~ "^[yes|y]$" ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
+echo "Are you sure you want to archive $CURRENT_DIR/$DIR_NAME (yes/no)? " && read REPLY
+[[ ! $REPLY =~ ^[yes|Yy]$ ]] && echo "That's OK. Goodbye! 👋🏻" && exit 1
 
 # Check for uncomitted changes
 cd "$DIR_NAME"
@@ -29,7 +29,7 @@ echo "Deleting $CURRENT_DIR/$DIR_NAME/**/.build ... 🗑" && find $CURRENT_DIR/$
 
 
 # Make zip and copy to Documents
-echo "Now we will create archive the project to $HOME/Documents/$DIR_NAME-dev.zip" && zip -r "$HOME/Documents/$DIR_NAME-dev.zip" $CURRENT_DIR/"$DIR_NAME";
+echo "Now we will create archive the project to $HOME/Documents/Arkiv/$DIR_NAME-dev.zip" && zip -r "$HOME/Documents/Arkiv/$DIR_NAME-dev.zip" $CURRENT_DIR/"$DIR_NAME";
 
 # Delete project folder
 echo "All done! 🥳 Moving $DIR_NAME to Trash ..." && trash "$CURRENT_DIR/$DIR_NAME"

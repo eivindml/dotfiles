@@ -1,9 +1,6 @@
 [user]
-  name = Eivind Lindbråten
-  email = eivindml@icloud.com
-
-[diff]
-  tool = ksdiff
+	name = Eivind Lindbråten
+	email = eivindml@icloud.com
 
 [init]
   defaultBranch = main
@@ -19,23 +16,16 @@
   ac = !git add -A && git commit -m
 	conflicts = diff --name-only --diff-filter=U
 
-[merge]
-  tool = ksdiff
-
-[difftool]
-  prompt = false
-
 [diff]
-  tool = Kaleidoscope
+    tool = Kaleidoscope
 
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [merge]
-  tool = Kaleidoscope
+    tool = Kaleidoscope
 
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
-[rerere]
-	enabled = 1
+

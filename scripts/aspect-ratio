@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Set the file name of the image
+image_file=$1
+
+# Find the width and height of the image
+image_size=$(identify -format "%w %h" "$image_file")
+
+# Extract the width and height from the image size string
+width=$(echo $image_size | awk '{print $1}')
+height=$(echo $image_size | awk '{print $2}')
+
+# Calculate the aspect ratio of the image
+aspect_ratio=$(echo "scale=2; $width/$height" | bc)
+
+# Convert the aspect ratio to a fraction
+fraction=$(echo "$aspect_ratio" | awk '{split($1, a, "."); print a[1] "/" a[2] * 100}')
+
+# Output the result
+echo "The aspect ratio of $image_file is $fraction"
