@@ -164,3 +164,7 @@ eval "$(pyenv init -)"
 
 export PATH="/Users/eivindml/.local/bin:$PATH"
 export PATH="/Users/eivindml/scripts:$PATH"
+
+
+
+source ~/.zsh/functions.zsh

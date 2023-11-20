@@ -24,8 +24,9 @@ series:
     - Erlend og Steinar Hjelper Deg
     - Exit
     - Flaked
+    - Futurama
+    - Fleabag
     - Folkeopplysningen
-    - Hacks
     - Hamiltons Pharmacopeia
     - High Maintenance
     - House of the Dragon
@@ -33,7 +34,7 @@ series:
     - Jul i Blodfjell
     - Kasko
     - Kompani Lauritzen
-    - Kompani Lauritzen Tropp 1
+    - Kompani Lauritzen Tropp
     - Kongen Befaler
     - Louis Theroux
     - Louis Theroux Interviews
@@ -52,13 +53,14 @@ series:
     - Queen of Versailles Reigns Again
     - Reservation Dogs
     - Rick and Morty
-    - Rutherford Falls
     - Search Party
     - Sick of It
     - Space Force
     - Stranger Things
     - Taskmaster
     - Team Ingebrigtsen
+    - The Bear
+    - The Curse 2023
     - Ted Lasso
     - The Boondocks
     - The Green Planet
@@ -67,13 +69,16 @@ series:
     - The Lord of the Rings
     - The Queens Gambit
     - The Wheel of Time
+    - The Outlaws
     - Trailer Park Boys
     - Trygdekontoret
     - Trygdekontoret Dokumentar
     - Watchmen
-    - Wednesday
     - Westworld
     - Who Is America
+    # - Wednesday
+    # - Rutherford Falls
+    # - Hacks
     # - 20 Aar Med Espen Eckbo
     # - 90 Day Fiance
     # - Abandoned
@@ -93,7 +98,7 @@ series:
     # - Cyberwar
     # - Downton Abbey
     # - Dynasties
-    # Documentary Now
+    # - Documentary Now
     # - Folkeopplysningen
     # - Fuck Thats Delicious
     # - Game of Thrones
