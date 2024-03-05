@@ -1,0 +1,10 @@
+export LC_ALL=en_US.UTF-8
+export PNPM_HOME="/Users/eivindml/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+export PATH="/Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon:$PATH"
+export PATH="/Users/eivindml/.local/bin:$PATH"
+export PATH="/Users/eivindml/scripts:$PATH"
+export PATH="/Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon:$PATH"
+[ -d "$HOME/Developer/dotfiles/bin" ] && export PATH="$PATH:$HOME/Developer/dotfiles/bin"
+[ -d "$HOME/.bin" ] && export PATH="$PATH:$HOME/.bin"
+[ -d "/opt/homebrew/bin" ] && export PATH=/opt/homebrew/bin:$PATH
