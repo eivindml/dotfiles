@@ -11,11 +11,9 @@ series:
     - Beforeigners
     - Better Call Saul
     - Black Mirror
-    - Bobs Burgers
     - Calles Gale Verden
     - College Behind Bars
     - Curb Your Enthusiasm
-    - Dark
     - Det Kunne Vært Verre
     - Dips
     - Disenchantment
@@ -27,6 +25,7 @@ series:
     - Futurama
     - Fleabag
     - Folkeopplysningen
+    - Gardeners World
     - Hamiltons Pharmacopeia
     - High Maintenance
     - House of the Dragon
@@ -35,7 +34,7 @@ series:
     - Kasko
     - Kompani Lauritzen
     - Kompani Lauritzen Tropp
-    - Kongen Befaler
+    - LOL Den Som Ler Sist
     - Louis Theroux
     - Louis Theroux Interviews
     - Med Monsen Paa Villspor
@@ -75,7 +74,10 @@ series:
     - Trygdekontoret Dokumentar
     - Watchmen
     - Westworld
-    - Who Is America
+    # - Kongen Befaler
+    # - Bobs Burgers
+    # - Who Is America
+    # - Dark
     # - Wednesday
     # - Rutherford Falls
     # - Hacks
