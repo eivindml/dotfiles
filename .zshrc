@@ -1,9 +1,21 @@
+source ~/.zsh/envs.zsh
+source ~/.zsh/functions.zsh
+source ~/.zsh/aliases.zsh
+
+# Start tmux on shell start
+#if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#  exec tmux
+#fi
+
 autoload -U colors && colors	# Load colors
 
 # History in cache directory:
 HISTSIZE=120000000
 SAVEHIST=100000000
 HISTFILE=~/.cache/zsh/history
+# Append commands immediately and share history between environments
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -50,12 +62,12 @@ precmd() {
 }
 
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats '⎇ %F{yellow}%b'
+zstyle ':vcs_info:git:*' formats '⎇ %F{235}%b'
 
 # This needs prompt_subst set, hence the name. So:
 setopt PROMPT_SUBST
 
-export PROMPT='%F{red}%B[%b%F{yellow}%n%F{cyan}@%F{magenta}%M %F{green}%~%F{red}%B]%b%F{red} ${vcs_info_msg_0_}%F{cyan}
+export PROMPT='%F{235}%B[%b%F{253}%n%F{245}@%F{237}%M %F{green}%~%F{235}%B]%b%F{235} ${vcs_info_msg_0_}%F{202}
 $ '
 
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -79,9 +91,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-source ~/.zsh/envs.zsh
-source ~/.zsh/functions.zsh
-source ~/.zsh/aliases.zsh
 
 # Load syntax highlighting; should be last.
 source "$HOME/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2>/dev/null

@@ -13,7 +13,7 @@ function dnbtoynab() {
 }
 
 function dnbcompanytoynab() {
-  awk -F';' 'BEGIN {OFS=","; RS="\r\n"; ORS="\n"} NR==6 {print "\"Date\",\"Memo\",\"Inflow\",\"Inflow\""} NR > 6 {print $1, $2, $6, $7}' $1 > $2
+  awk -F';' 'BEGIN {OFS=","; RS="\r\n"; ORS="\n"} NR==5 {print "\"Date\",\"Memo\",\"Inflow\",\"Inflow\""} NR > 5 {print $5, $2, $6, $7}' $1 > $2
 }
 
 function convertfavicon() {

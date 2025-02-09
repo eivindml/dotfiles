@@ -7,3 +7,4 @@ alias dat='bat --theme="GitHub" -p'
 alias dev="cd ~/Developer/"
 alias -s json=nova
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+alias vim='nvim'
