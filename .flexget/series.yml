@@ -6,146 +6,108 @@ series:
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
-    - Toll
-    - Wheel of Time
-    - Arrested Development
-    - Barry
-    - Beforeigners
-    - Better Call Saul
-    # - Black Mirror
-    - Calles Gale Verden
-    - College Behind Bars
-    - Curb Your Enthusiasm
-    - Det Kunne Vært Verre
-    - Dips
-    - Disenchantment
-    - Dopesick
-    # - Everythings Gonna Be Okay
-    - Erlend og Steinar Hjelper Deg
-    - Exit
-    - Flaked
-    - Forraeder
-    - Forræder
-    - Futurama
-    # - Fleabag
-    - Folkeopplysningen
-    # - Gardeners World
-    - Hamiltons Pharmacopeia
-    - High Maintenance
-    - House of the Dragon
-    - How to With John Wilson
-    - Ikke Lov Aa Le Paa Hytta
-    - Jul i Blodfjell
-    - Kasko
-    - Kompani Lauritzen
-    - Kompani Lauritzen Tropp
-    - Kids In Crime
-    - LOL Den Som Ler Sist
-    - Louis Theroux
-    - Louis Theroux Interviews
-    - Med Monsen Paa Villspor
-    - Middleditch And Schwartz
-    - Modern Love
-    - Mr. Robot
-    - Nathan For You
-    - Nissene i Bingen
-    - Norges dummeste
-    - Our Planet
-    - Over The Garden Wall
-    - Poerni
-    - Pørni
-    - Kids In Crime
-    - Forbannelsen
-    - Queen of Versailles Reigns Again
-    - Reservation Dogs
-    - Rick and Morty
-    - Rikets Roast
-    - Search Party
-    - Shogun
-    - Squid Game
-    - Sick of It
-    - Space Force
-    - Stranger Things
-    - Taskmaster
-    - Team Ingebrigtsen
-    - The Bear
-    - Tom Green Country
-    - The Boys
-    - The Curse 2023
-    - Ted Lasso
-    - The Boondocks
-    - The Green Planet
-    - The Last Man on Earth
-    - The Last OG
-    # - The Lord of the Rings
-    - The Queens Gambit
-    - The Wheel of Time
-    # - The Outlaws
-    - Trailer Park Boys
-    - Trygdekontoret
-    - Trygdekontoret Dokumentar
-    - What we do in the shadows
-    - Watchmen
-    - Westworld
-    # - Kongen Befaler
-    # - Bobs Burgers
-    # - Who Is America
-    # - Dark
-    # - Wednesday
-    # - Rutherford Falls
-    # - Hacks
     # - 20 Aar Med Espen Eckbo
     # - 90 Day Fiance
     # - Abandoned
     # - Action Bronson And Friends Watch Ancient Aliens
     # - Adventure Time Distant Lands
+    # - Arrested Development
     # - Balls Deep
+    # - Better Call Saul
     # - Black Market
     # - Black Market Dispatches
+    # - Black Mirror
+    # - Bloodline
+    # - Bobs Burgers
     # - Bong Apetit
     # - Bravest Warriors
     # - Breaking Bad
     # - Brooklyn Nine Nine
-    # - Bloodline
+    # - Calles Gale Verden
     # - Central Park
     # - Chelsea
     # - Cobra Kai
+    # - College Behind Bars
+    # - Curb Your Enthusiasm
     # - Cyberwar
+    # - Dark
+    # - Det Kunne Vært Verre
+    # - Documentary Now
+    # - Dopesick
     # - Downton Abbey
     # - Dynasties
-    # - Documentary Now
+    # - Erlend og Steinar Hjelper Deg
+    # - Everythings Gonna Be Okay
+    # - Exit
+    # - Flaked
+    # - Fleabag
     # - Folkeopplysningen
+    # - Forbannelsen
     # - Fuck Thats Delicious
     # - Game of Thrones
+    # - Gardeners World
     # - Gaycation
     # - Genius
+    # - Hacks
+    # - Hamiltons Pharmacopeia
+    # - High Maintenance
     # - History of Swear Words
     # - Huangs World
     # - Indian Summers
+    # - Jul i Blodfjell
+    # - Kasko
+    # - Kompani Lauritzen
+    # - Kompani Lauritzen Tropp
+    # - Kongen Befaler
     # - Louis Theroux Dark States
+    # - Med Monsen Paa Villspor
+    # - Middleditch And Schwartz
     # - Modern Family
+    # - Modern Love
     # - Mr. Mayor
+    # - Mr. Robot
     # - MythBusters
     # - Narcos
+    # - Nathan For You
+    # - Nissene i Bingen
     # - Noisey
     # - Norm Macdonald Has a Show
+    # - Our Planet
+    # - Over The Garden Wall
     # - Planet Earth
     # - Planet Earth 2
     # - Planet Earth II
     # - Planet Earth Two
     # - Prison Break
+    # - Queen of Versailles Reigns Again
     # - Resident Alien
+    # - Rutherford Falls
     # - Saturday Night Live
+    # - Search Party
     # - Sherlock
+    # - Sick of It
     # - Silicon Valley
     # - South Park
+    # - Space Force
+    # - Taskmaster
     # - Teenage Boss
+    # - The Boondocks
+    # - The Curse 2023
     # - The Great North
+    # - The Green Planet
     # - The Handmaids Tale
     # - The Knick
+    # - The Last Man on Earth
+    # - The Last OG
     # - The Last Panthers
+    # - The Lord of the Rings
     # - The Office
+    # - The Outlaws
+    # - The Queens Gambit
     # - The Simpsons
+    # - Trailer Park Boys
+    # - Trygdekontoret
+    # - Trygdekontoret Dokumentar
     # - VICE
     # - VICE Does America
     # - VICE Essentials
@@ -153,4 +115,40 @@ series:
     # - VICE Lab
     # - VICE On HBO
     # - Viceland
+    # - Watchmen
+    # - Wednesday
     # - Weediquette
+    # - Westworld
+    # - What we do in the shadows
+    # - Who Is America
+    - Barry
+    - Beforeigners
+    - Dips
+    - Disenchantment
+    - Folkeopplysningen
+    - Forraeder
+    - Forræder
+    - Futurama
+    - House of the Dragon
+    - How to With John Wilson
+    - Ikke Lov Aa Le Paa Hytta
+    - Kids In Crime
+    - LOL Den Som Ler Sist
+    - Louis Theroux
+    - Louis Theroux Interviews
+    - Norges dummeste
+    - Poerni
+    - Pørni
+    - Reservation Dogs
+    - Rick and Morty
+    - Rikets Roast
+    - Shogun
+    - Squid Game
+    - Stranger Things
+    - Team Ingebrigtsen
+    - Ted Lasso
+    - The Bear
+    - The Boys
+    - The Wheel of Time
+    - Toll
+    - Tom Green Country
