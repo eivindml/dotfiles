@@ -91,6 +91,13 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+export PATH="/Users/eivindml/.local/bin:$PATH"
+export PATH="/Users/eivindml/scripts:$PATH"
+
+
+source ~/.zsh/envs.zsh
+source ~/.zsh/functions.zsh
+source ~/.zsh/aliases.zsh
 
 # Load syntax highlighting; should be last.
 source "$HOME/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2>/dev/null
