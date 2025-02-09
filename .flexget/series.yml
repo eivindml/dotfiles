@@ -6,6 +6,8 @@ series:
       set:
         path: /Volumes/TV/{{series_name}}/Season {{series_season}}/
   tv-group:
+    - Toll
+    - Wheel of Time
     - Arrested Development
     - Barry
     - Beforeigners
@@ -22,6 +24,8 @@ series:
     - Erlend og Steinar Hjelper Deg
     - Exit
     - Flaked
+    - Forraeder
+    - Forræder
     - Futurama
     # - Fleabag
     - Folkeopplysningen
@@ -30,10 +34,12 @@ series:
     - High Maintenance
     - House of the Dragon
     - How to With John Wilson
+    - Ikke Lov Aa Le Paa Hytta
     - Jul i Blodfjell
     - Kasko
     - Kompani Lauritzen
     - Kompani Lauritzen Tropp
+    - Kids In Crime
     - LOL Den Som Ler Sist
     - Louis Theroux
     - Louis Theroux Interviews
@@ -43,6 +49,7 @@ series:
     - Mr. Robot
     - Nathan For You
     - Nissene i Bingen
+    - Norges dummeste
     - Our Planet
     - Over The Garden Wall
     - Poerni
@@ -54,25 +61,30 @@ series:
     - Rick and Morty
     - Rikets Roast
     - Search Party
+    - Shogun
+    - Squid Game
     - Sick of It
     - Space Force
     - Stranger Things
     - Taskmaster
     - Team Ingebrigtsen
     - The Bear
+    - Tom Green Country
+    - The Boys
     - The Curse 2023
     - Ted Lasso
     - The Boondocks
     - The Green Planet
     - The Last Man on Earth
     - The Last OG
-    - The Lord of the Rings
+    # - The Lord of the Rings
     - The Queens Gambit
     - The Wheel of Time
     # - The Outlaws
     - Trailer Park Boys
     - Trygdekontoret
     - Trygdekontoret Dokumentar
+    - What we do in the shadows
     - Watchmen
     - Westworld
     # - Kongen Befaler
