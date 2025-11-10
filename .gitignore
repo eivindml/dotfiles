@@ -4,3 +4,5 @@
 .flexget/db-config.sqlite
 .flexget/.config-lock
 .flexget/received/
+.zsh/envs.zsh
+envs.sh

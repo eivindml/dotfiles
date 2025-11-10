@@ -10,6 +10,7 @@
 
 [core]
   excludesfile = /Users/eivindml/.gitignore
+  ignorecase = false
 
 [alias]
   add-commit = !git add -A && git commit

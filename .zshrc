@@ -93,6 +93,7 @@ eval "$(pyenv init -)"
 
 export PATH="/Users/eivindml/.local/bin:$PATH"
 export PATH="/Users/eivindml/scripts:$PATH"
+export PATH="/Users/eivindml/.dotnet:$PATH"
 
 
 source ~/.zsh/envs.zsh
