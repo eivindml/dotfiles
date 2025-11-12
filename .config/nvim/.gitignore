@@ -1,0 +1,8 @@
+# Generated plugin directory (managed by lazy.nvim/packer)
+plugin/
+
+# Spell files (user-specific dictionary)
+spell/*.add.spl
+
+# LSP workspace files
+.luarc.json
